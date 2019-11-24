@@ -1,0 +1,10 @@
+//  basic functions
+// function for general variables
+@function general($name) {
+    @return map-get($general, $name)
+};
+
+// function for breakpoint variables
+@function bp($name) {
+    @return map-get($breakpoints, $name);
+}

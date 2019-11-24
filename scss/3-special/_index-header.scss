@@ -1,0 +1,154 @@
+
+//------------
+//   SMALL SCREENS FIRST! :)
+// ----------
+#header-global {
+    width: 100%;
+    padding-bottom: 0;
+    box-shadow: 0 1px 7px rgba(0,0,0,0.12);
+    @include stickyTop0;
+    background: rgba(255, 255, 255, 0.98);
+    z-index: 99;
+     
+     .container {
+         @include gridOneCol; 
+      }
+ 
+ 
+     // phone num
+      #tell { 
+         margin: 0;
+         margin-bottom: 1em;
+         @include relativeTop0;
+         background: general(primary); 
+         padding: 5px;
+         color: #fff;  
+         width: 200px;
+         font-weight: bold; 
+         display: none; //hidden in mobile screens
+ 
+         strong {
+         text-align: center;
+         padding-left: 20px;
+         }
+     }
+ 
+ 
+  // navigation menu
+     nav {
+         @include gridOneCol;
+         padding: 10px 0;
+         padding-bottom: 0; 
+     #brand {
+         @include flex-center;
+         width: 100%;
+      img {
+         width: 40px;
+         height: 40px;
+         border-radius: 10px; 
+         
+         }
+      h1 {
+         font-weight: bold;
+         color: rgb(98, 176, 182);
+         text-transform: uppercase;
+         font-size: 17px; 
+         padding-left: 10px;
+         }
+      }
+ 
+ 
+ 
+      ul {
+         display: flex;
+      li {
+          margin-left: 1em;
+          padding-top: 15px;
+          height: 100%;
+          font-size: 15px;
+          @media screen and (min-width: 470px){ 
+             width: 100px; 
+         }
+      a { 
+          opacity: 0.74;
+          padding-bottom: 27px;
+          transition: .3s;
+          
+          &:hover {
+          opacity: 1;
+          border-bottom: 2px solid #cecdca;
+          color: #333;
+          }
+ 
+          &:visited,
+          &:active {
+          color: #333;
+          opacity: 1;
+          }
+          @media screen and (max-width: 950px){  
+             &:hover {
+            border-bottom: none;
+         }
+       }
+          }
+         }
+      }
+ 
+      #login { 
+         display: none;  
+    }
+     }
+ 
+ 
+ 
+ } // end global header
+ 
+ 
+ #hidden-sm {
+    display: none;
+ }
+ 
+ /* -----------
+ //  DESKTOP VERSION :)
+  ----------- */
+ 
+ @media screen and (min-width: 950px){
+ #header-global {
+    padding-bottom: 5px; 
+    #tell {
+       display: block;
+       margin-bottom: 10px;
+       left: 50%;
+    }
+ 
+    nav { 
+       @include grid3Col;
+       grid-template-columns: 1fr 1fr 15%;
+       padding: 10px 0;
+       padding-bottom: 0;
+ 
+       ul li {
+          width: 100px;
+          margin: 0;
+       }
+    #brand {
+       justify-content: left;
+       h1 {
+          margin: 0;
+          margin-top: 10px;
+          font-size: 20px;
+       }
+    }
+ 
+    #login {
+       display: block;
+       margin: 0;
+    }
+ }
+ }
+ 
+ 
+ } // *end Desktop version
+ 
+ 
+ 

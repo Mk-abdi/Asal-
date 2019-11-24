@@ -1,0 +1,41 @@
+
+//--------
+// DESKTOP 
+// -------
+
+.container {
+    max-width: 1200px;
+}
+
+
+// GLOBAL NAV :) 
+ 
+#globalNav { 
+    @include gridOneCol; 
+    padding: 1em 0; 
+    .logo { 
+        display: flex;
+        justify-self: center;
+        img {max-width: 50px; height: 50px; padding-top: 0.5rem;}
+        h1 {
+            margin-left: 0.5em;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: general(secondary);
+        }
+    }
+
+    ul { 
+        margin: 1.5em 0;
+        display: flex;
+        justify-content: center;
+        width: 6/100%;
+        li { 
+            margin-left: 2.5rem;
+           a{ font-size: 17px;
+        }
+    }
+    }
+
+} // end global nav
+

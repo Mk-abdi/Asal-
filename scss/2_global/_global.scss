@@ -1,0 +1,101 @@
+ 
+// backgrounds
+.bg {
+   &-primary {
+       @include set-background(#fff); 
+   }
+   &-light {
+       @include set-background(#fff); 
+   }
+   &-dark {
+       @include set-background(#222); 
+   }
+   
+}
+ 
+// buttons 
+.button {
+   padding: 0.75em;
+   font-size: 16px;
+   color: #f2f2f2;
+   opacity: 0.9; 
+   font-weight: 550; 
+   text-align: center; 
+   &:hover {opacity: 1;}
+
+  // different sizes
+   &-xsmall {
+       padding: 0.5em;
+       width: 100px;
+   }
+
+   &-normal {
+       background: general(primary);
+   }
+
+   &-big {
+       padding: 0.8em 2em;
+       background: general(danger);
+   }
+  // .....
+  &-borderlight {
+      background: #fff;
+      border: 1px solid inherit;
+      color: #333;
+  }
+
+  
+}
+
+// inputs
+.input { 
+   padding: 5px 10px;
+   color: #333;
+   border: 1px solid general(greyLight);
+   &:focus {
+     box-shadow: general(b_shadow);
+  }
+}
+
+// -----------
+//  CONTENT DIVIDER (just a hr) :)
+// -----------
+  #divider { 
+      position: relative;
+      margin-bottom: 0.5rem;
+      hr {
+         border: 1px solid general(greyLight);
+      }
+     span{
+         position: absolute;
+         top: 0;
+         text-align: center;
+         width: 100%; 
+         display: flex;
+         justify-content: center;
+         p {
+         background: #fff;
+         padding: 5px;
+         color: general(p);
+         width: 100px;
+         color: #333;
+         }
+      }
+  }
+ 
+
+
+// -----------
+//  CONTAINER :)
+// -----------
+    @media screen and(min-width: 950px){
+       .container {
+       max-width: 1100px; 
+       }
+    }
+ 
+
+  
+ 
+
+  

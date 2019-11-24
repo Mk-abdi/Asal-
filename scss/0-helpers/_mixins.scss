@@ -1,0 +1,102 @@
+ 
+ 
+
+//----------
+//   Grids :)
+//----------
+
+@mixin gridOneCol {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@mixin grid2Col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@mixin grid3Col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+@mixin grid3lastSmall {
+    display: grid;
+    grid-template-columns: 1fr 1fr 15%;
+}
+
+
+
+//----------
+//   Box-shadows :)
+//----------
+
+@mixin coolBoxShadow { 
+    box-shadow: 0 2px 10px rgba(82, 87, 86, 0.2),   0 -1px 2px rgba(82, 87, 86, 0.2);
+}
+
+
+
+//----------
+//   Positions and box model :)
+//----------
+
+@mixin full {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin full-relative {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+@mixin full-absolute {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+@mixin full-sticky {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+@mixin stickyTop0 {
+    position: sticky;
+    top: 0;
+}
+
+@mixin relativeTop0 {
+    position: sticky;
+    top: 0;
+}
+
+@mixin absoluteTop0 {
+    position: sticky;
+    top: 0;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+ 
+ 
+
+@function set-text-color($color){
+    @if(lightness($color) > 50){
+        @return #333;
+    }@else {
+        @return #fff;
+    }
+}
+
+@mixin set-background($color){
+    background-color: $color;
+    color: set-text-color($color);
+}

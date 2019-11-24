@@ -1,0 +1,20 @@
+@mixin h-normal {
+    font-weight: bold;
+    font-size: 22px; 
+    text-transform: uppercase;
+}
+
+@mixin h1-lg-bold {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+
+
+.hdr {
+  &-xlarge{
+    font-size: 40px;
+    font-weight: 500;
+  }
+}
