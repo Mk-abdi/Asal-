@@ -9,7 +9,8 @@
 
 
 // GLOBAL NAV :) 
- 
+ #globalNav {display: none;}
+@media screen and (min-width: 800px){
 #globalNav { 
     @include gridOneCol; 
     padding: 1em 0; 
@@ -38,4 +39,6 @@
     }
 
 } // end global nav
+
+}
 

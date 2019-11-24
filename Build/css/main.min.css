@@ -157,50 +157,50 @@ img {
 }
 
 #globalNav {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  padding: 1em 0;
+  display: none;
 }
 
-#globalNav .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-self: center;
-}
-
-#globalNav .logo img {
-  max-width: 50px;
-  height: 50px;
-  padding-top: 0.5rem;
-}
-
-#globalNav .logo h1 {
-  margin-left: 0.5em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #469da3;
-}
-
-#globalNav ul {
-  margin: 1.5em 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 6/100%;
-}
-
-#globalNav ul li {
-  margin-left: 2.5rem;
-}
-
-#globalNav ul li a {
-  font-size: 17px;
+@media screen and (min-width: 800px) {
+  #globalNav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 1em 0;
+  }
+  #globalNav .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: center;
+  }
+  #globalNav .logo img {
+    max-width: 50px;
+    height: 50px;
+    padding-top: 0.5rem;
+  }
+  #globalNav .logo h1 {
+    margin-left: 0.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #469da3;
+  }
+  #globalNav ul {
+    margin: 1.5em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 6/100%;
+  }
+  #globalNav ul li {
+    margin-left: 2.5rem;
+  }
+  #globalNav ul li a {
+    font-size: 17px;
+  }
 }
 
 footer {
@@ -1043,14 +1043,14 @@ body {
   cursor: pointer;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 17%;
-      grid-template-columns: 1fr 17%;
+  -ms-grid-columns: 1fr 20%;
+      grid-template-columns: 1fr 20%;
   padding: 0.5em 1em;
   border-left: 5px solid #333;
 }
 
 #main-home .sec1 #notifications div span p {
-  font-size: 15.8px;
+  font-size: 15.5px;
   margin: 0;
 }
 
@@ -1067,7 +1067,7 @@ body {
   margin: 1em 0;
   max-width: 250px;
   position: relative;
-  left: 20%;
+  left: 17%;
   background: #469da3;
 }
 
@@ -1101,10 +1101,11 @@ body {
 }
 
 #main-home .sec1 #messages button {
+  margin: 1em 0;
   max-width: 250px;
   position: relative;
-  left: 20%;
-  background: #469da3;
+  left: 17%;
+  background: #ec9f0f;
 }
 
 #main-home .sec1 #messages .message {
@@ -1116,6 +1117,7 @@ body {
 }
 
 #main-home .sec1 #messages .message span {
+  padding: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
