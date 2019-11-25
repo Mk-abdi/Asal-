@@ -16,11 +16,12 @@
 // buttons 
 .button {
    padding: 0.75em;
-   font-size: 16px;
-   color: #f2f2f2;
+   font-size: 16px; 
    opacity: 0.9; 
    font-weight: 550; 
    text-align: center; 
+   background: #f2f2f2;
+   box-shadow: general(b_shadow);
    &:hover {opacity: 1;}
 
   // different sizes

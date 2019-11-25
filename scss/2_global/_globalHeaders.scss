@@ -8,8 +8,7 @@
 }
 
 
-// GLOBAL NAV :) 
- #globalNav {display: none;}
+// GLOBAL NAV :)  
 @media screen and (min-width: 800px){
 #globalNav { 
     @include gridOneCol; 
@@ -22,6 +21,7 @@
             margin-left: 0.5em;
             text-transform: uppercase;
             font-weight: bold;
+            letter-spacing: 0.5px;
             color: general(secondary);
         }
     }
@@ -32,8 +32,13 @@
         justify-content: center;
         width: 6/100%;
         li { 
-            margin-left: 2.5rem;
+           margin: 0 2rem;
            a{ font-size: 17px;
+            padding-bottom: 5px;
+            transition: all .2s linear;
+            &:hover, &:focus, &:active {
+                border-bottom: 1px solid general(grey1);
+            }
         }
     }
     }
