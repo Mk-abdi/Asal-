@@ -387,6 +387,82 @@ footer div ul li a:hover {
   }
 }
 
+main .data-table {
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 1em;
+  padding-bottom: 3em;
+  border-radius: 5px;
+  position: relative;
+}
+
+main .data-table span {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+main .data-table span p, main .data-table span a {
+  font-weight: 550;
+}
+
+main .data-table span a {
+  max-width: 100px;
+  position: absolute;
+  left: 80%;
+  color: #ec9f0f;
+}
+
+main .data-table table thead, main .data-table table th, main .data-table table tr, main .data-table table td {
+  border: none;
+}
+
+main .data-table table .det {
+  color: #469da3;
+}
+
+main .data-table table thead th {
+  border-bottom: 1px solid #e3e3e3;
+  color: #555;
+  text-align: center;
+}
+
+main .data-table table thead th:first-child {
+  text-align: left;
+}
+
+main .data-table table tbody tr td {
+  color: #555;
+  font-size: 15.5px;
+  text-align: center;
+}
+
+main .data-table table tbody tr td:first-child {
+  text-align: left;
+}
+
+main .data-table table tfoot {
+  background: #e3e3e3;
+  width: 100%;
+  position: absolute;
+  margin: 1em 0;
+  left: 0;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+main .data-table table tfoot td {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+main .data-table table tfoot #totalAmount {
+  font-weight: lighter;
+}
+
 main {
   display: -ms-grid;
   display: grid;
@@ -942,6 +1018,10 @@ main .sec3 .telNums strong {
   }
 }
 
+body {
+  background: #f6f8f7;
+}
+
 #main-home {
   display: -ms-grid;
   display: grid;
@@ -967,49 +1047,7 @@ main .sec3 .telNums strong {
 }
 
 #main-home .data-table {
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
-  background: #fff;
-  padding: 1em;
   max-height: 15rem;
-  border-radius: 5px;
-}
-
-#main-home .data-table span {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-#main-home .data-table span p, #main-home .data-table span a {
-  font-weight: 550;
-}
-
-#main-home .data-table span a {
-  max-width: 100px;
-  position: absolute;
-  left: 80%;
-  color: #ec9f0f;
-}
-
-#main-home .data-table table thead, #main-home .data-table table th, #main-home .data-table table tr, #main-home .data-table table td {
-  border: none;
-}
-
-#main-home .data-table table .det {
-  color: #469da3;
-}
-
-#main-home .data-table table thead th {
-  border-bottom: 1px solid #f2f2f2;
-  color: #555;
-}
-
-#main-home .data-table table tbody tr td {
-  color: #555;
-  font-size: 15.5px;
 }
 
 #main-home .sec1 {
@@ -1219,4 +1257,32 @@ main .sec3 .telNums strong {
   justify-self: center;
   background: #c8dfe0;
   color: #555;
+}
+
+#main-view-products {
+  max-width: 820px;
+}
+
+#main-view-orders {
+  max-width: 1250px;
+}
+
+#main-view-orders .data-table {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 1em 0;
+  padding-bottom: 1.5em;
+}
+
+#main-view-orders .data-table p {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+#main-view-orders .data-table thead {
+  margin-bottom: 4px;
+}
+
+#main-view-orders .data-table table tbody tr:nth-child(odd) {
+  background: #f2f2f2;
 }

@@ -9,7 +9,7 @@
  
  
 body {
-    // background: rgb(246, 248, 247);    
+    background: rgb(246, 248, 247);    
 }
 
 
@@ -32,48 +32,8 @@ body {
         grid-gap: 2em;    
      }
 
-     .data-table {  
-       @include B_shadow-normal;
-        background: #fff;
-        padding: 1em;
-        max-height: 15rem;
-        border-radius: 5px;
-     span {
-        position: relative;
-        display: flex;
-        width: 100%;
-        
-        p,a { 
-        font-weight: 550;
-        }
-        a {
-        max-width:  100px;
-        position: absolute;
-        left: 80%;
-        color: general(primary);
-      }
-     }
-    }
-
-    .data-table table {  
-    thead,th,tr,td {
-            border: none; 
-            }
-        .det {
-        color: general(secondary);
-         }
-        thead{
-        th{
-        border-bottom: 1px solid general(white2);
-        color:  #555 ; 
-        }
-        }
-        tbody tr{
-        td {
-        color:  #555;
-        font-size: 15.5px;
-        }
-       }
+     .data-table {
+         max-height: 15rem;
      }
 
 
@@ -245,4 +205,29 @@ body {
 //       V  I  E  W 
 //------------------------------------------------------------------------
  
- 
+ #main-view-products {
+     max-width: 820px; 
+ }
+
+
+ //------------------------------------------------------------------------
+//       V  I  E  W 
+//------------------------------------------------------------------------
+
+ #main-view-orders {
+    max-width: 1250px;
+
+    .data-table { 
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        padding: 1em 0;
+        padding-bottom: 1.5em;
+        p {
+            font-size: 20px;
+            padding-left: 10px;
+        }
+        thead { margin-bottom: 4px;}
+        table tbody tr:nth-child(odd){
+            background: general(white2);
+        }
+    }
+ }
