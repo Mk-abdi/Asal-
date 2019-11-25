@@ -5,6 +5,7 @@
   font-size: 16px;
   letter-spacing: 0.5px;
   line-height: 1.5;
+  font-weight: 450;
 }
 
 body {
@@ -104,7 +105,7 @@ img {
 
 .button-borderlight {
   background: #fff;
-  border: 1px solid inherit;
+  border: 1px solid #d5d5d5;
   color: #333;
 }
 
@@ -150,7 +151,7 @@ img {
 
 @media screen and (min-width: 950px) {
   .container {
-    max-width: 1100px;
+    max-width: 1200px;
   }
 }
 
@@ -941,15 +942,7 @@ main .sec3 .telNums strong {
   }
 }
 
-.container {
-  max-width: 1200px;
-}
-
-body {
-  background: #fff;
-}
-
-#main-home, .main-commontTable {
+#main-home {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;
@@ -958,13 +951,13 @@ body {
 }
 
 @media screen and (min-width: 2000px) {
-  #main-home, .main-commontTable {
+  #main-home {
     grid-column-gap: 7rem;
     max-width: 1400px;
   }
 }
 
-#main-home .sec0, .main-commontTable .sec0 {
+#main-home .sec0 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -973,7 +966,7 @@ body {
   grid-gap: 2em;
 }
 
-#main-home .data-table, .main-commontTable .data-table {
+#main-home .data-table {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
   background: #fff;
@@ -982,7 +975,7 @@ body {
   border-radius: 5px;
 }
 
-#main-home .data-table span, .main-commontTable .data-table span {
+#main-home .data-table span {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -990,36 +983,36 @@ body {
   width: 100%;
 }
 
-#main-home .data-table span p, #main-home .data-table span a, .main-commontTable .data-table span p, .main-commontTable .data-table span a {
+#main-home .data-table span p, #main-home .data-table span a {
   font-weight: 550;
 }
 
-#main-home .data-table span a, .main-commontTable .data-table span a {
+#main-home .data-table span a {
   max-width: 100px;
   position: absolute;
   left: 80%;
   color: #ec9f0f;
 }
 
-#main-home .data-table table thead, #main-home .data-table table th, #main-home .data-table table tr, #main-home .data-table table td, .main-commontTable .data-table table thead, .main-commontTable .data-table table th, .main-commontTable .data-table table tr, .main-commontTable .data-table table td {
+#main-home .data-table table thead, #main-home .data-table table th, #main-home .data-table table tr, #main-home .data-table table td {
   border: none;
 }
 
-#main-home .data-table table .det, .main-commontTable .data-table table .det {
+#main-home .data-table table .det {
   color: #469da3;
 }
 
-#main-home .data-table table thead th, .main-commontTable .data-table table thead th {
+#main-home .data-table table thead th {
   border-bottom: 1px solid #f2f2f2;
   color: #555;
 }
 
-#main-home .data-table table tbody tr td, .main-commontTable .data-table table tbody tr td {
+#main-home .data-table table tbody tr td {
   color: #555;
   font-size: 15.5px;
 }
 
-#main-home .sec1, .main-commontTable .sec1 {
+#main-home .sec1 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -1027,7 +1020,7 @@ body {
   grid-gap: 2em;
 }
 
-#main-home .sec1 #notifications, .main-commontTable .sec1 #notifications {
+#main-home .sec1 #notifications {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
   padding: 1em 0;
@@ -1037,13 +1030,13 @@ body {
   border-radius: 5px;
 }
 
-#main-home .sec1 #notifications h2, .main-commontTable .sec1 #notifications h2 {
+#main-home .sec1 #notifications h2 {
   font-size: 25px;
   font-weight: 500;
   text-align: center;
 }
 
-#main-home .sec1 #notifications div, .main-commontTable .sec1 #notifications div {
+#main-home .sec1 #notifications div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -1051,7 +1044,7 @@ body {
   grid-gap: .8em;
 }
 
-#main-home .sec1 #notifications div span, .main-commontTable .sec1 #notifications div span {
+#main-home .sec1 #notifications div span {
   cursor: pointer;
   display: -ms-grid;
   display: grid;
@@ -1061,21 +1054,21 @@ body {
   border-left: 5px solid #333;
 }
 
-#main-home .sec1 #notifications div span p, .main-commontTable .sec1 #notifications div span p {
+#main-home .sec1 #notifications div span p {
   font-size: 15.5px;
   margin: 0;
 }
 
-#main-home .sec1 #notifications div span small, .main-commontTable .sec1 #notifications div span small {
+#main-home .sec1 #notifications div span small {
   font-size: 15px;
   color: #555;
 }
 
-#main-home .sec1 #notifications div span:first-child, .main-commontTable .sec1 #notifications div span:first-child {
+#main-home .sec1 #notifications div span:first-child {
   border-left: 5px solid #d11137;
 }
 
-#main-home .sec1 #notifications button, .main-commontTable .sec1 #notifications button {
+#main-home .sec1 #notifications button {
   margin: 1em 0;
   max-width: 250px;
   position: relative;
@@ -1084,7 +1077,7 @@ body {
   color: #fff;
 }
 
-#main-home .sec1 #divider, .main-commontTable .sec1 #divider {
+#main-home .sec1 #divider {
   border: none;
   margin: 0;
   padding: 0;
@@ -1097,7 +1090,7 @@ body {
   justify-self: flex-end;
 }
 
-#main-home .sec1 #messages, .main-commontTable .sec1 #messages {
+#main-home .sec1 #messages {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
   padding: 1em;
@@ -1107,13 +1100,13 @@ body {
   border-radius: 5px;
 }
 
-#main-home .sec1 #messages h2, .main-commontTable .sec1 #messages h2 {
+#main-home .sec1 #messages h2 {
   font-size: 25px;
   font-weight: 500;
   text-align: center;
 }
 
-#main-home .sec1 #messages button, .main-commontTable .sec1 #messages button {
+#main-home .sec1 #messages button {
   margin: 1em 0;
   max-width: 250px;
   position: relative;
@@ -1122,7 +1115,7 @@ body {
   color: #fff;
 }
 
-#main-home .sec1 #messages .message, .main-commontTable .sec1 #messages .message {
+#main-home .sec1 #messages .message {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 17%;
@@ -1130,7 +1123,7 @@ body {
   grid-gap: 0.8;
 }
 
-#main-home .sec1 #messages .message span, .main-commontTable .sec1 #messages .message span {
+#main-home .sec1 #messages .message span {
   padding: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1141,7 +1134,7 @@ body {
           flex-direction: column;
 }
 
-#main-home .sec1 #messages .message span small, .main-commontTable .sec1 #messages .message span small {
+#main-home .sec1 #messages .message span small {
   color: #555;
   padding: 5px 0;
 }
@@ -1188,6 +1181,13 @@ body {
   max-width: 300px;
 }
 
+#main-order aside .paidAmount {
+  background: #fff;
+  border: 1px solid #d5d5d5;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
 #main-order aside .numbers {
   display: -ms-grid;
   display: grid;
@@ -1208,17 +1208,15 @@ body {
   font-weight: lighter;
 }
 
-#main-view {
-  display: block;
-}
-
-#main-view .data-table {
-  max-width: 750px;
-  max-height: auto;
-  margin: auto;
-}
-
-#main-view .data-table table #footer {
-  background: red;
-  width: 100%;
+#main-order aside .button-small {
+  max-width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+  background: #c8dfe0;
+  color: #555;
 }

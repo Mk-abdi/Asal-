@@ -7,113 +7,118 @@
 @import './3-special/3-special';
 
  
-// -----------
-// SITE MAIN CONTENT :)
-// ----------
-  .container {
-    max-width: 1200px; 
-  }
+ 
 body {
-    background: #fff;    
+    // background: rgb(246, 248, 247);    
 }
 
- #main-home, .main-commontTable { 
-        
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-     grid-gap: 2.5em;
+
+//------------------------------------------------------------------------
+//    D  A  S  H  B  O  A  R  D
+//------------------------------------------------------------------------
+ #main-home  {    
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 2.5em;
      @media screen and (min-width: 2000px){ // more spaces between columns in large screens
         grid-column-gap: 7rem;
         max-width: 1400px;
      }
+
+    //  tables
      .sec0 {
         @include gridOneCol;
         max-height: 650px;
-        grid-gap: 2em;
-        
-         
+        grid-gap: 2em;    
      }
 
-     .data-table {
-        // @include coolBoxShadow;
-         box-shadow: 0 1px 5px rgba(0,0,0,0.2), 0 0 3px rgba(0,0,0,0.1);
+     .data-table {  
+       @include B_shadow-normal;
         background: #fff;
         padding: 1em;
         max-height: 15rem;
         border-radius: 5px;
-        span {
-            position: relative;
-            display: flex;
-            width: 100%;
-            p,a { font-weight: 550;    }
-             a {
-                 max-width:  100px;
-                position: absolute;
-                left: 80%;
-                color: general(primary);
-            }
+     span {
+        position: relative;
+        display: flex;
+        width: 100%;
+        
+        p,a { 
+        font-weight: 550;
         }
+        a {
+        max-width:  100px;
+        position: absolute;
+        left: 80%;
+        color: general(primary);
+      }
+     }
     }
 
     .data-table table {  
-        thead,th,tr,td { border: none;  }
+    thead,th,tr,td {
+            border: none; 
+            }
         .det {
-            color: general(secondary);
+        color: general(secondary);
+         }
+        thead{
+        th{
+        border-bottom: 1px solid general(white2);
+        color:  #555 ; 
         }
-        thead th {
-            border-bottom: 1px solid general(white2);
-            color:  #555 ; 
-
         }
         tbody tr{
-            td {
-                color:  #555;
-                font-size: 15.5px;
-            }
+        td {
+        color:  #555;
+        font-size: 15.5px;
         }
-    }
+       }
+     }
 
+
+    //  notifications/messages
       .sec1 {
         @include gridOneCol;
         grid-gap: 2em;
 
         #notifications {
-            box-shadow: 0 1px 5px rgba(0,0,0,0.2), 0 0 3px rgba(0,0,0,0.1);
+            @include B_shadow-normal;
             padding: 1em 0;
             background: #fff;
             max-width: 33rem;
             margin: auto;
             border-radius: 5px;
             h2 {
-                font-size: 25px;
-                font-weight: 500;
-                text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+            text-align: center;
             }
 
-            div {
-                @include gridOneCol;
-                grid-gap: .8em;
-                span {
-                    cursor: pointer;
-                    display: grid;
-                    grid-template-columns: 1fr 20%;
-                    padding: 0.5em 1em;
-                    border-left: 5px solid general(dark1);
-                    p{font-size: 15.5px; margin: 0;}
-                    small{ font-size: 15px; color: #555;}
-                }
-                span:first-child{
-                    border-left: 5px solid general(danger);
-                }
+         div {
+            @include gridOneCol;
+            grid-gap: .8em;
+            span {
+            cursor: pointer;
+            display: grid;
+            grid-template-columns: 1fr 20%;
+            padding: 0.5em 1em;
+            border-left: 5px solid general(dark1);
+            p{font-size: 15.5px; margin: 0;}
+            small{ font-size: 15px; color: #555;}
             }
-            button {
-                margin: 1em 0;
-                max-width: 250px;
-               position: relative;
-               left: 17%;
-               background: general(secondary);
-               color: #fff;
+            span:first-child{
+                border-left: 5px solid general(danger);
             }
+        }
+        button {
+            margin: 1em 0;
+            max-width: 250px;
+            position: relative;
+            left: 17%;
+            background: general(secondary);
+            color: #fff;
+        }
         }
         #divider {
             border: none;
@@ -133,32 +138,32 @@ body {
             max-width: 33rem;
             margin: auto;
             border-radius: 5px;
-            h2 {
-                font-size: 25px;
-                font-weight: 500;
-                text-align: center;
-            }
+         h2 {
+            font-size: 25px;
+            font-weight: 500;
+            text-align: center;
+          }
 
-            button {
-                margin: 1em 0;
-                max-width: 250px;
-               position: relative;
-               left: 17%;
-               background: general(primary);
-               color: #fff;
-            }
+         button {
+            margin: 1em 0;
+            max-width: 250px;
+            position: relative;
+            left: 17%;
+            background: general(primary);
+            color: #fff;
+        }
 
-            .message { 
-                display: grid;
-                grid-template-columns: 1fr 17%;
-                grid-gap: 0.8;
-                span {
-                    padding: 0.5rem;
-                    display: flex;
-                flex-direction: column;
-                    small { color: #555; padding: 5px 0;}
-                }
-            }
+         .message { 
+            display: grid;
+            grid-template-columns: 1fr 17%;
+            grid-gap: 0.8;
+         span {
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            small { color: #555; padding: 5px 0;}
+        }
+     }
 
             
         }
@@ -167,71 +172,77 @@ body {
  }
 
   
-//-----------------------------------------------------------
-//-----------------------------------------------------------
+//------------------------------------------------------------------------
+//         O  R  D  E  R 
+//------------------------------------------------------------------------
 
 #main-order {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 4em;
-    section { 
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 4em;
+        section { 
         padding: 1em;
         border-radius: 5px;
-    strong {
+        strong {
         padding: 0.5rem 0;
         border-bottom: 1px solid general(grey1);
+        }
     }
-}
-    .opts {
+        .opts {
         display: grid; 
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 2em;
         margin: 1em 0;
         button {
-            height: 70px;
-            color: #333;
-            &:hover, &:focus {
-                background: general(secondary);
-                color: #fff;
+        height: 70px;
+        color: #333;
+        &:hover, &:focus {
+        background: general(secondary);
+        color: #fff;
+            }
             }
         }
-    }
 
-    aside {
+        aside {
         margin-top: 5rem;
         max-width: 300px; 
+
+        .paidAmount {
+            background: #fff;
+            border: 1px solid general(grey1);
+            font-weight: lighter;
+            text-transform: uppercase; 
+        }
         .numbers {
-            display: grid; 
-            grid-gap: 0.5em;
-            border-left: 1px solid general(grey1);
-            padding: 1em;
-            span {
-                display: flex;
-                b {
-                    font-size: 15px;
-                    margin-left: 3rem;
-                    font-weight: lighter;
-                }
-            }
+        display: grid; 
+        grid-gap: 0.5em;
+        border-left: 1px solid general(grey1);
+        padding: 1em;
+        span {
+        display: flex;
+        b {
+        font-size: 15px;
+        margin-left: 3rem;
+        font-weight: lighter;
+        }
+        }
+        }
+
+        .button-small {
+            max-width: 150px;
+            display: flex;
+            justify-content: center;
+            justify-self: center; 
+            background: general(success);
+            // color: general(secondary);
+            color: #555;
+        }
         }
     }
-}
 
 
-//-----------------------------------------------------------
-//-----------------------------------------------------------
-#main-view {
-    display: block;
-    .data-table {
-        max-width: 750px;
-        max-height: auto;
-        margin: auto;
-
-        table {
-            #footer {
-                background: red;
-                width: 100%;
-            }
-        }
-    }
-}
+//------------------------------------------------------------------------
+//       V  I  E  W 
+//------------------------------------------------------------------------
+ 
+ 
