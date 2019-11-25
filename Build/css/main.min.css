@@ -1293,7 +1293,3 @@ aside .button-small {
 #main-view-orders .data-table thead {
   margin-bottom: 4px;
 }
-
-#main-view-orders .data-table table tbody tr:nth-child(odd) {
-  background: #f2f2f2;
-}
