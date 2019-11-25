@@ -1215,22 +1215,19 @@ body {
   color: #fff;
 }
 
-#main-order orders
-aside {
+#main-order aside {
   margin-top: 5rem;
   max-width: 300px;
 }
 
-#main-order orders
-aside .paidAmount {
-  background: unset;
+#main-order aside .paidAmount {
+  background: #fff;
   border: 1px solid #d5d5d5;
   font-weight: lighter;
   text-transform: uppercase;
 }
 
-#main-order orders
-aside .numbers {
+#main-order aside .numbers {
   display: -ms-grid;
   display: grid;
   grid-gap: 0.5em;
@@ -1238,22 +1235,19 @@ aside .numbers {
   padding: 1em;
 }
 
-#main-order orders
-aside .numbers span {
+#main-order aside .numbers span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#main-order orders
-aside .numbers span b {
+#main-order aside .numbers span b {
   font-size: 15px;
   margin-left: 3rem;
   font-weight: lighter;
 }
 
-#main-order orders
-aside .button-small {
+#main-order aside .button-small {
   max-width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1263,7 +1257,7 @@ aside .button-small {
           justify-content: center;
   justify-self: center;
   background: #c8dfe0;
-  color: #444;
+  color: #555;
 }
 
 #main-view-products {

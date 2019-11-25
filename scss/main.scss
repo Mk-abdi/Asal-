@@ -131,7 +131,7 @@ body {
     
  }
 
-  
+
 //------------------------------------------------------------------------
 //         O  R  D  E  R 
 //------------------------------------------------------------------------
@@ -161,13 +161,14 @@ body {
         color: #fff;
             }
             }
-        }orders
+        }
 
         aside {
         margin-top: 5rem;
-        max-width: 300px;  
+        max-width: 300px; 
+
         .paidAmount {
-            background: unset;
+            background: #fff;
             border: 1px solid general(grey1);
             font-weight: lighter;
             text-transform: uppercase; 
@@ -194,10 +195,11 @@ body {
             justify-self: center; 
             background: general(success);
             // color: general(secondary);
-            color: #444;
+            color: #555;
         }
         }
     }
+
 
 
 //------------------------------------------------------------------------
