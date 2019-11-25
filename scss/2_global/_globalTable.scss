@@ -1,0 +1,71 @@
+main {
+    .data-table {  
+    @include B_shadow-normal;
+     background: #fff;
+     padding: 1em; 
+     padding-bottom: 3em;
+     border-radius: 5px;
+     position: relative;
+  span {
+     position: relative;
+     display: flex;
+     width: 100%;
+     
+     p,a { 
+     font-weight: 550;
+     }
+     a {
+     max-width:  100px;
+     position: absolute;
+     left: 80%;
+     color: general(primary);
+   }
+  }
+ }
+
+ .data-table table {   
+ thead,th,tr,td {
+         border: none; 
+         }
+     .det {
+     color: general(secondary);
+      }
+     thead{
+     th{
+     border-bottom: 1px solid general(greyLight);
+     color:  #555 ; 
+     text-align: center;
+     }
+     th:first-child{
+      text-align: left;
+   }
+     }
+     tbody tr{
+        // border: 1px solid general(white2);
+     td {
+     color:  #555;
+     font-size: 15.5px; 
+    //  border-right: 1px solid general(white2);
+    text-align: center;
+     }
+     td:first-child{
+        text-align: left;
+     }
+    }
+
+    tfoot {
+       background: general(greyLight);
+       width: 100%;
+       position: absolute;
+       margin: 1em 0;
+       left: 0;
+       border-radius: 5px;
+       padding: 0 10px;
+       td {
+         font-size: 17px;
+         font-weight: 600;
+       }
+       #totalAmount {font-weight: lighter;}
+  }
+ }
+}
