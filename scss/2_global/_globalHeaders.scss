@@ -35,10 +35,10 @@
         li { 
            margin: 0 2rem;
            a{ font-size: 17px;
-            padding-bottom: 5px;
+            padding-bottom: 10px;
             transition: all .2s linear;
             &:hover, &:focus, &:active {
-                border-bottom: 1px solid general(grey1);
+                border-bottom: 2px solid general(greyLight);
             }
         }
     }
