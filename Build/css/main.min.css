@@ -1214,19 +1214,22 @@ body {
   color: #fff;
 }
 
-#main-order aside {
+#main-order orders
+aside {
   margin-top: 5rem;
   max-width: 300px;
 }
 
-#main-order aside .paidAmount {
-  background: #fff;
+#main-order orders
+aside .paidAmount {
+  background: unset;
   border: 1px solid #d5d5d5;
   font-weight: lighter;
   text-transform: uppercase;
 }
 
-#main-order aside .numbers {
+#main-order orders
+aside .numbers {
   display: -ms-grid;
   display: grid;
   grid-gap: 0.5em;
@@ -1234,19 +1237,22 @@ body {
   padding: 1em;
 }
 
-#main-order aside .numbers span {
+#main-order orders
+aside .numbers span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#main-order aside .numbers span b {
+#main-order orders
+aside .numbers span b {
   font-size: 15px;
   margin-left: 3rem;
   font-weight: lighter;
 }
 
-#main-order aside .button-small {
+#main-order orders
+aside .button-small {
   max-width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1264,7 +1270,11 @@ body {
 }
 
 #main-view-orders {
-  max-width: 1250px;
+  max-width: 1150px;
+}
+
+#main-view-orders tbody, #main-view-orders td, #main-view-orders tr {
+  padding: 1em;
 }
 
 #main-view-orders .data-table {

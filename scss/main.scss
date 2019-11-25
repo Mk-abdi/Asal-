@@ -161,14 +161,13 @@ body {
         color: #fff;
             }
             }
-        }
+        }orders
 
         aside {
         margin-top: 5rem;
-        max-width: 300px; 
-
+        max-width: 300px;  
         .paidAmount {
-            background: #fff;
+            background: unset;
             border: 1px solid general(grey1);
             font-weight: lighter;
             text-transform: uppercase; 
@@ -215,8 +214,11 @@ body {
 //------------------------------------------------------------------------
 
  #main-view-orders {
-    max-width: 1250px;
+    max-width: 1150px;
 
+    tbody, td, tr {
+        padding: 1em;
+    }
     .data-table { 
         box-shadow: 0 0 5px rgba(0,0,0,0.1);
         padding: 1em 0;
@@ -224,8 +226,8 @@ body {
         p {
             font-size: 20px;
             padding-left: 10px;
-        }
-        thead { margin-bottom: 4px;}
+        } 
+        thead { margin-bottom: 4px;}  
         table tbody tr:nth-child(odd){
             background: general(white2);
         }
