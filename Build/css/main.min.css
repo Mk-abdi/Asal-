@@ -159,6 +159,10 @@ img {
   max-width: 1200px;
 }
 
+#globalNav {
+  display: none;
+}
+
 @media screen and (min-width: 800px) {
   #globalNav {
     display: -ms-grid;
@@ -1118,13 +1122,17 @@ body {
   border-left: 5px solid #c8dfe0;
 }
 
-#main-home .sec1 #notifications button {
+#main-home .sec1 button {
   margin: 1em 0;
-  max-width: 250px;
-  position: relative;
-  left: 17%;
+  width: 100%;
   background: #469da3;
   color: #fff;
+}
+
+#main-home .sec1 #btn {
+  display: block;
+  max-width: 200px;
+  margin: auto;
 }
 
 #main-home .sec1 #divider {
@@ -1156,11 +1164,15 @@ body {
   text-align: center;
 }
 
+#main-home .sec1 #messages #btn {
+  display: block;
+  width: 200px;
+  margin: auto;
+}
+
 #main-home .sec1 #messages button {
   margin: 1em 0;
-  max-width: 250px;
-  position: relative;
-  left: 17%;
+  max-width: 100%;
   background: #ec9f0f;
   color: #fff;
 }
@@ -1315,4 +1327,63 @@ body {
 
 #main-view-orders .data-table table tbody tr:nth-child(odd) {
   background: #f6f8f7;
+}
+
+@media screen and (max-width: 1050px) {
+  #main-home {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #main-home .sec0 .data-table {
+    max-width: 850px;
+    margin: auto;
+  }
+  #main-home .sec1 {
+    max-width: 1000px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 850px) {
+  #main-home .sec1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #main-home .sec1 #notifications h2 {
+    font-size: 20px;
+  }
+  #main-home .sec1 #notifications div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: .8em;
+  }
+  #main-home .sec1 #notifications div span {
+    -ms-grid-columns: 1fr 25%;
+        grid-template-columns: 1fr 25%;
+  }
+  #main-home .sec1 #notifications div span p {
+    font-size: 14.5px;
+  }
+  #main-home .sec1 #notifications div span small {
+    font-size: 14px;
+  }
+  #main-home .sec1 #messages h2 {
+    font-size: 20px;
+  }
+  #main-home .sec1 #messages .message {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 25%;
+        grid-template-columns: 1fr 25%;
+    grid-gap: 0.8;
+  }
 }
