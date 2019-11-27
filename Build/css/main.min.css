@@ -249,7 +249,7 @@ img {
   }
 }
 
-@media screen and (max-width: 800px) and (max-width: 440px) {
+@media screen and (max-width: 800px) and (max-width: 490px) {
   #globalNav .logo h1 {
     font-size: 13px;
   }
@@ -1480,5 +1480,30 @@ body {
     -ms-grid-columns: 1fr 25%;
         grid-template-columns: 1fr 25%;
     grid-gap: 0.8;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #main-order {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #main-order .opts {
+    -ms-grid-columns: (minmax(120px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+
+@media screen and (max-width: 1100px) and (max-width: 740px) {
+  #main-order .opts button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #main-order aside {
+    margin: 0 auto;
   }
 }

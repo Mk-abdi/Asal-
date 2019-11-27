@@ -273,7 +273,7 @@ body {
 
 
 
-//  mobile
+//  H O M E 
 
 @media screen and (max-width: 1050px){
     #main-home {
@@ -336,6 +336,27 @@ body {
     
 }
 }
+}
+
+
+// A D D 
+@media screen and (max-width: 1100px){
+    #main-order {
+        @include gridOneCol; 
+        .opts {
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            @media screen and (max-width: 740px){
+                button {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        aside {
+            margin: 0 auto;
+        }
+    }
+
 }
 
 // push btns to right in x-sm screens
