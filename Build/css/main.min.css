@@ -114,11 +114,16 @@ img {
   padding: 5px 10px;
   color: #333;
   border: 1px solid #e3e3e3;
+  border-radius: 3px;
 }
 
 .input:focus {
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.input-kindaFat {
+  padding: 15px;
 }
 
 #divider {
@@ -1544,4 +1549,34 @@ body {
   #main-order aside {
     margin: 0 auto;
   }
+}
+
+#main-add-user {
+  background: #fff;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+#main-add-user h1 {
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+}
+
+#main-add-user #global-form {
+  margin: auto;
+  margin-top: 0;
+}
+
+#main-add-user #global-form select {
+  width: 100%;
+  margin-bottom: 1em;
+  outline: none;
+  background: transparent;
+}
+
+#main-add-user #global-form button {
+  background: #c8dfe0;
+  color: #222;
 }

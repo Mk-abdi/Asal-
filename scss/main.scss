@@ -359,16 +359,35 @@ body {
     }
 
 }
+ 
 
-// push btns to right in x-sm screens
-// @media screen and (max-width: 370px){
-//    #main-home {
-//        .sec1 {
-//             #notifications {
-//         button {
-//             left: 7%;
-//         }
-//     }
-// }
-//    }
-// }
+ //------------------------------------------------------------------------
+//      A  D  D  U  S  E  R
+//------------------------------------------------------------------------
+
+#main-add-user {
+    background: #fff;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 10px; 
+    h1 {
+        font-size: 18px;
+        text-align: center;
+        color: general(dark1);
+    }
+    #global-form {
+        margin: auto;
+        margin-top: 0;
+
+        select {
+           width: 100%; 
+           margin-bottom: 1em; 
+           outline: none;
+           background: transparent;
+        }
+        button {
+            background: general(success);
+            color: general(dark0);
+        }
+    }
+}
