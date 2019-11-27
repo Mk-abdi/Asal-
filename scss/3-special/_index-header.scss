@@ -26,10 +26,9 @@
          width: 200px;
          font-weight: bold; 
          display: none; //hidden in mobile screens
- 
-         strong {
          text-align: center;
-         padding-left: 20px;
+         strong {
+         text-align: center; 
          }
      }
  
@@ -61,6 +60,8 @@
  
       ul {
          display: flex;
+         max-width: 100%;
+         margin: 1em auto;
       li {
           margin-left: 1em;
           padding-top: 15px;
@@ -69,6 +70,9 @@
           @media screen and (min-width: 470px){ 
              width: 100px; 
          }
+          @media screen and (min-width: 375px) and (max-width: 470px){
+           padding-left: 10px;
+        }
       a { 
           opacity: 0.74;
           padding-bottom: 27px;
