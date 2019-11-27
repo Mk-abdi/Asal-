@@ -42,7 +42,7 @@ body {
         grid-gap: 2em;
 
         #notifications {
-            @include B_shadow-normal;
+            @include b_shadow-normal;
             padding: 1em 0;
             background: #fff;
             max-width: 33rem;

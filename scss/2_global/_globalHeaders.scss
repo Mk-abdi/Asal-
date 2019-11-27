@@ -53,12 +53,18 @@
 
 } // end global nav
 
- 
- 
+  
 @media screen and (max-width: 800px){
     #globalNav {
         @include grid2Col;
+        max-height: 3.5rem;
+        position: sticky;
+        top: 0;
+        border-bottom: 1.5px solid general(greyLight);
+        z-index: 97;
+        background: general(light0);
         .logo {
+            max-height: 3rem;
             img {
                 width: 20px;
                 height: 20px;
@@ -76,30 +82,39 @@
    #nList { 
        display: grid;
        justify-content: end;
-       
+       position: relative;
+       margin: 0.5em 0 0 0;
+       padding-right: 0.4rem;
        input[type=checkbox]:checked ~ ul {
            display: flex;
        }
         #show_menu { 
             display: flex;
-            justify-self: center;
-            color: general(dark1);
+            justify-self: flex-end;
+            color: general(secondary);
             font-size: 18px;
+            margin: 0;
+            margin-right: 2em;
+            padding: 0 10px 10px 10px; 
+            cursor: pointer;
         }
 
         
         ul {
             flex-direction: column;
             display: none;
-            background: red; 
+            border: 1.5px solid general(greyLight);
+            border-top: none;
             margin: 0;
             padding: 0 1em 1em 1em;
+            background: general(light0);
+            z-index: 96;
             li {
                 margin: 0;
                 margin-top: 1em;
                 justify-self: flex-end;
             }
-        }
+        } 
     }
 }
 }

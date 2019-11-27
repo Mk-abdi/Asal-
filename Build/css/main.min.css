@@ -229,6 +229,16 @@ img {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    max-height: 3.5rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border-bottom: 1.5px solid #e3e3e3;
+    z-index: 97;
+    background: #f6f8f7;
+  }
+  #globalNav .logo {
+    max-height: 3rem;
   }
   #globalNav .logo img {
     width: 20px;
@@ -258,6 +268,9 @@ img {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+    position: relative;
+    margin: 0.5em 0 0 0;
+    padding-right: 0.4rem;
   }
   #globalNav #nList input[type=checkbox]:checked ~ ul {
     display: -webkit-box;
@@ -268,9 +281,13 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-self: center;
-    color: #333;
+    justify-self: flex-end;
+    color: #469da3;
     font-size: 18px;
+    margin: 0;
+    margin-right: 2em;
+    padding: 0 10px 10px 10px;
+    cursor: pointer;
   }
   #globalNav #nList ul {
     -webkit-box-orient: vertical;
@@ -278,9 +295,12 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     display: none;
-    background: red;
+    border: 1.5px solid #e3e3e3;
+    border-top: none;
     margin: 0;
     padding: 0 1em 1em 1em;
+    background: #f6f8f7;
+    z-index: 96;
   }
   #globalNav #nList ul li {
     margin: 0;
