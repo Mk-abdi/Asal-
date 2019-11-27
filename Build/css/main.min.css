@@ -1389,6 +1389,10 @@ body {
   max-width: 820px;
 }
 
+#main-view-orders {
+  margin-bottom: 2em;
+}
+
 #main-view-orders thead th {
   font-size: 16px;
 }
