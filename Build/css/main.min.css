@@ -160,57 +160,132 @@ img {
 }
 
 #globalNav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 1em 0;
+}
+
+#globalNav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+}
+
+#globalNav .logo img {
+  max-width: 50px;
+  height: 50px;
+  padding-top: 0;
+}
+
+#globalNav .logo h1 {
+  margin-left: 0.5em;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #469da3;
+}
+
+#globalNav #show_menu {
   display: none;
 }
 
-@media screen and (min-width: 800px) {
+#globalNav input[type=checkbox] {
+  display: none;
+}
+
+#globalNav ul {
+  margin: 1.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 6/100%;
+}
+
+#globalNav ul li {
+  margin: 0 2rem;
+}
+
+#globalNav ul li a {
+  font-size: 17px;
+  padding-bottom: 10px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+#globalNav ul li a:hover, #globalNav ul li a:focus, #globalNav ul li a:active {
+  border-bottom: 2px solid #e3e3e3;
+}
+
+@media screen and (max-width: 800px) {
   #globalNav {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    padding: 1em 0;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
-  #globalNav .logo {
+  #globalNav .logo img {
+    width: 20px;
+    height: 20px;
+  }
+  #globalNav .logo h1 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 800px) and (max-width: 440px) {
+  #globalNav .logo h1 {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 800px) and (max-width: 370px) {
+  #globalNav .logo h1 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #globalNav #nList {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  #globalNav #nList input[type=checkbox]:checked ~ ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #globalNav #nList #show_menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     justify-self: center;
+    color: #333;
+    font-size: 18px;
   }
-  #globalNav .logo img {
-    max-width: 50px;
-    height: 50px;
-    padding-top: 0;
+  #globalNav #nList ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+    background: red;
+    margin: 0;
+    padding: 0 1em 1em 1em;
   }
-  #globalNav .logo h1 {
-    margin-left: 0.5em;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    color: #469da3;
-  }
-  #globalNav ul {
-    margin: 1.5em 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 6/100%;
-  }
-  #globalNav ul li {
-    margin: 0 2rem;
-  }
-  #globalNav ul li a {
-    font-size: 17px;
-    padding-bottom: 10px;
-    -webkit-transition: all .2s linear;
-    transition: all .2s linear;
-  }
-  #globalNav ul li a:hover, #globalNav ul li a:focus, #globalNav ul li a:active {
-    border-bottom: 2px solid #e3e3e3;
+  #globalNav #nList ul li {
+    margin: 0;
+    margin-top: 1em;
+    justify-self: flex-end;
   }
 }
 

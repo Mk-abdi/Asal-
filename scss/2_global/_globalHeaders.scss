@@ -7,12 +7,9 @@
     max-width: 1200px;
 }
 
-#globalNav {
-    display: none;
-}
+ 
 
-// GLOBAL NAV :)  
-@media screen and (min-width: 800px){
+// GLOBAL NAV :)   
 #globalNav { 
     @include gridOneCol; 
     padding: 1em 0; 
@@ -29,6 +26,13 @@
             color: general(secondary);
         }
     }
+    #show_menu {
+        display: none;
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+
 
     ul { 
         margin: 1.5em 0;
@@ -49,5 +53,53 @@
 
 } // end global nav
 
-}
+ 
+ 
+@media screen and (max-width: 800px){
+    #globalNav {
+        @include grid2Col;
+        .logo {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            h1 {
+                font-size: 18px;
+                @media screen and (max-width: 440px){
+                    font-size: 13px;
+                }
+                  @media screen and (max-width: 370px){
+                    font-size: 12px;
+                }
+            }
+        }
+   #nList { 
+       display: grid;
+       justify-content: end;
+       
+       input[type=checkbox]:checked ~ ul {
+           display: flex;
+       }
+        #show_menu { 
+            display: flex;
+            justify-self: center;
+            color: general(dark1);
+            font-size: 18px;
+        }
 
+        
+        ul {
+            flex-direction: column;
+            display: none;
+            background: red; 
+            margin: 0;
+            padding: 0 1em 1em 1em;
+            li {
+                margin: 0;
+                margin-top: 1em;
+                justify-self: flex-end;
+            }
+        }
+    }
+}
+}
