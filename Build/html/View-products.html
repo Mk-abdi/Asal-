@@ -11,21 +11,27 @@
     <!-- *SEO -->
     <meta name="description" content="Asal printing press: a cool printing press">
     <meta name="keywords" content="Print, banners, posters, jigjiga, stickers, asal">
-    <!-- *little bit of custom boostrap*-->
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <!-- *boostrap for wrappers (containers)-->
     <link rel="stylesheet" href="../B/css/bootstrap.min.css">
     <!-- *css-->
     <link rel="stylesheet" href="../css/main.min.css">
 
-    <title> View products </title>
+    <title> Dashboard | asal</title>
 </head>
 
 <body> 
-     <nav id="globalNav" class="container">
+      <nav id="globalNav" class="container">
        <div class="logo">
            <img src="../imgs/laptopbg.jpg" alt="asal logo">   
            <h1 class="hdr hdr-xlarge">Asal printing press</h1>
         </div>
-           <ul>
+        
+        <div id="nList">
+            <label for="menu" id="show_menu" class="fa fa-home"></label>
+            <input type="checkbox" id="menu">
+            <ul>
                <li><a href="Dashboard.html">Home</a></li>
                <li><a href="Add.html">Add</a></li>
                <li><a href="View.html">View</a></li>
@@ -33,6 +39,7 @@
                <li><a href="Notifications.html">Notifications</a></li>
                <li><a href="Finance.html">Finance</a></li>
            </ul>
+        </div>        
    </nav> 
 
    <main class="container" id="main-view-products"> 
