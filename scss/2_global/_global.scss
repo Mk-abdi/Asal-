@@ -1,17 +1,4 @@
  
-// backgrounds
-.bg {
-   &-primary {
-       @include set-background(#fff); 
-   }
-   &-light {
-       @include set-background(#fff); 
-   }
-   &-dark {
-       @include set-background(#222); 
-   }
-   
-}
  
 // buttons 
 .button {

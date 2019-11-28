@@ -222,6 +222,68 @@ body {
 }
 
 
+@media screen and (max-width: 1050px){
+    #main-home {
+        @include gridOneCol;
+        .sec0 {
+        .data-table {
+            max-width: 850px;
+            margin: auto;
+            }
+            }
+        .sec1 {
+            max-width: 1000px;
+            margin: auto;
+        }
+    }
+        
+}
+
+@media screen and (max-width: 1050px) and (min-width: 850px) {
+  #main-home {
+      .sec1 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+      }
+  }
+}
+
+@media screen and (max-width: 400px) {
+      #main-home {
+        
+            .sec1 {
+            #notifications { 
+            h2 {
+            font-size: 20px;  
+            }
+
+         div {
+            @include gridOneCol;
+            grid-gap: .8em; 
+            span {  
+            grid-template-columns: 1fr 25%;
+            p{font-size: 14.5px; }
+            small{ font-size: 14px;}
+   
+            }
+        }
+    }
+
+       #messages { 
+         h2 {
+            font-size: 20px; 
+          }
+   
+         .message { 
+            display: grid;
+            grid-template-columns: 1fr 25%;
+            grid-gap: 0.8; 
+     }
+  }
+    
+}
+}
+}
 
 
 //------------------------------------------------------------------------
@@ -302,19 +364,18 @@ body {
         .opts {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         @media screen and (max-width: 740px){
-            button {
-                font-size: 14px;
-            }
-          }
+        button {
+        font-size: 14px;
         }
+      }
+    }
 
-         aside {
-            margin: 0 auto;
-         }
+        aside {
+        margin: 0 auto;
+        }
     }
 }
- 
-
+  
 
 
 
@@ -323,10 +384,21 @@ body {
 //------------------------------------------------------------------------
  
  #main-view-products {
-     max-width: 820px;  
+     max-width: 820px;    
+
+ @media screen and (max-width: 550px){
+     .data-table {
+         table {
+            tfoot {
+            width: 100%; 
+            margin: 0; 
+            padding: 0;
+             }
+         }
+     }
  }
 
-
+ }
 
 
 
@@ -338,7 +410,7 @@ body {
     margin-bottom: 2em;
     thead{
         th {
-            font-size: 16px; 
+        font-size: 16px; 
         }
     }
    
@@ -364,99 +436,9 @@ body {
         
     }
  }
-
+ 
 
  
-  
-
-<<<<<<< HEAD
- 
-=======
-//  H O M E 
-
-@media screen and (max-width: 1050px){
-    #main-home {
-        @include gridOneCol;
-        .sec0 {
-            .data-table {
-                max-width: 850px;
-                margin: auto;
-            }
-        }
-        .sec1 {
-            max-width: 1000px;
-            margin: auto;
-        }
-    }
-        
-}
-
-@media screen and (max-width: 1050px) and (min-width: 850px) {
-  #main-home {
-      .sec1 {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-      }
-  }
-}
-
-@media screen and (max-width: 400px) {
-      #main-home {
-        
-            .sec1 {
-            #notifications { 
-            h2 {
-            font-size: 20px;  
-            }
-
-         div {
-            @include gridOneCol;
-            grid-gap: .8em; 
-            span {  
-            grid-template-columns: 1fr 25%;
-            p{font-size: 14.5px; }
-            small{ font-size: 14px;}
-   
-            }
-        }
-    }
-
-       #messages { 
-         h2 {
-            font-size: 20px; 
-          }
-   
-         .message { 
-            display: grid;
-            grid-template-columns: 1fr 25%;
-            grid-gap: 0.8; 
-     }
-  }
-    
-}
-}
-}
-
-
-// A D D 
-@media screen and (max-width: 1100px){
-    #main-order {
-        @include gridOneCol; 
-        .opts {
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            @media screen and (max-width: 740px){
-                button {
-                    font-size: 14px;
-                }
-            }
-        }
-
-        aside {
-            margin: 0 auto;
-        }
-    }
-
-}
  
 
  //------------------------------------------------------------------------
@@ -464,10 +446,10 @@ body {
 //------------------------------------------------------------------------
 
 #main-add-user {
-    background: #fff;
-    max-width: 700px;
-    margin: auto;
-    border-radius: 10px; 
+        background: #fff;
+        max-width: 700px;
+        margin: auto;
+        border-radius: 10px; 
     h1 {
         font-size: 18px;
         text-align: center;
@@ -478,15 +460,14 @@ body {
         margin-top: 0;
 
         select {
-           width: 100%; 
-           margin-bottom: 1em; 
-           outline: none;
-           background: transparent;
+        width: 100%; 
+        margin-bottom: 1em; 
+        outline: none;
+        background: transparent;
         }
         button {
-            background: general(success);
-            color: general(dark0);
+        background: general(success);
+        color: general(dark0);
         }
     }
 }
->>>>>>> master
