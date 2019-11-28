@@ -54,8 +54,12 @@
    padding: 5px 10px;
    color: #333;
    border: 1px solid general(greyLight);
+   border-radius: 3px;
    &:focus {
-     box-shadow: general(b_shadow);
+    @include b_shadow-normal;
+  }
+  &-kindaFat {
+      padding: 15px; 
   }
 }
 

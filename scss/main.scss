@@ -369,4 +369,124 @@ body {
  
   
 
+<<<<<<< HEAD
  
+=======
+//  H O M E 
+
+@media screen and (max-width: 1050px){
+    #main-home {
+        @include gridOneCol;
+        .sec0 {
+            .data-table {
+                max-width: 850px;
+                margin: auto;
+            }
+        }
+        .sec1 {
+            max-width: 1000px;
+            margin: auto;
+        }
+    }
+        
+}
+
+@media screen and (max-width: 1050px) and (min-width: 850px) {
+  #main-home {
+      .sec1 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+      }
+  }
+}
+
+@media screen and (max-width: 400px) {
+      #main-home {
+        
+            .sec1 {
+            #notifications { 
+            h2 {
+            font-size: 20px;  
+            }
+
+         div {
+            @include gridOneCol;
+            grid-gap: .8em; 
+            span {  
+            grid-template-columns: 1fr 25%;
+            p{font-size: 14.5px; }
+            small{ font-size: 14px;}
+   
+            }
+        }
+    }
+
+       #messages { 
+         h2 {
+            font-size: 20px; 
+          }
+   
+         .message { 
+            display: grid;
+            grid-template-columns: 1fr 25%;
+            grid-gap: 0.8; 
+     }
+  }
+    
+}
+}
+}
+
+
+// A D D 
+@media screen and (max-width: 1100px){
+    #main-order {
+        @include gridOneCol; 
+        .opts {
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            @media screen and (max-width: 740px){
+                button {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        aside {
+            margin: 0 auto;
+        }
+    }
+
+}
+ 
+
+ //------------------------------------------------------------------------
+//      A  D  D  U  S  E  R
+//------------------------------------------------------------------------
+
+#main-add-user {
+    background: #fff;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 10px; 
+    h1 {
+        font-size: 18px;
+        text-align: center;
+        color: general(dark1);
+    }
+    #global-form {
+        margin: auto;
+        margin-top: 0;
+
+        select {
+           width: 100%; 
+           margin-bottom: 1em; 
+           outline: none;
+           background: transparent;
+        }
+        button {
+            background: general(success);
+            color: general(dark0);
+        }
+    }
+}
+>>>>>>> master
