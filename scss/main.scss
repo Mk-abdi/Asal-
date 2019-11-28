@@ -534,3 +534,41 @@ body {
 
 
 }
+
+ #banner, #bcard { 
+
+    .container {
+        max-width: 500px;
+        padding: 1em;
+        background: #fff;
+        @include coolBoxShadow;
+        border-radius: 10px; 
+    }
+     form {
+         background: #fff;
+     }
+ }
+
+ .modal-backdrop.show {
+     background: none;
+ }
+
+ #banner { 
+     .container {
+         position: absolute;
+     }
+ }
+
+ #bcard { 
+     .container { 
+         position: absolute;
+     }
+     .container::after {
+         position: absolute;
+         width: 20px;
+         height: 20px;
+         background: red;
+         display: block;
+         left: 40%;
+     }
+ }

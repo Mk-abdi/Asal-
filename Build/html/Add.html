@@ -14,7 +14,7 @@
     <!-- font-awesome -->
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
     <!-- *boostrap for wrappers (containers)-->
-    <link rel="stylesheet" href="../B/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../B/css/bootstrap.min.css"> 
     <!-- *css-->
     <link rel="stylesheet" href="../css/main.min.css">
 
@@ -46,20 +46,50 @@
       <section>
           <strong>Order</strong>
           <div class="opts">
-              <button class="button">Banner</button>
+              <button class="button" data-toggle="modal" data-target="#banner" >Banner</button>
+         
+              <div class="modal" id="banner" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+               <div class="content">
+                   <div class="modal-body">
+                    <div class="container">
+                        <form id="global-form">
+                        <input class="input input-kindaFat"" type="text" id="global-input" placeholder="Name">
+                        <input  class="input input-kindaFat""  type="email" id="global-input" placeholder="email">
+                        </form>
+                        </div>
+                   </div>   
+              </div>
+              </div>
+             
+             
               <button class="button">Sticker</button>
               <button class="button">Banner</button>
               <button class="button">T-shirt Vip</button>
               <button class="button">Business card</button>
               <button class="button">Sticker</button>
               <button class="button" autofocus>Banner</button>
-              <button class="button">Banner</button>  
+              <button class="button" data-toggle="modal" data-target="#myModal">Banner</button>  
               <button class="button" autofocus>Sticker</button>
               <button class="button" autofocus>Banner</button>
               <button class="button">T-shirt Vip</button>
-              <button class="button">Business card</button>
-          </div>
+              <button class="button" data-toggle="modal" data-target="#bcard">Business card</button>
+              <div class="modal" id="bcard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+               <div class="content">
+                   <div class="modal-body">
+                    <div class="container">
+                        <form id="global-form">
+                        <input class="input input-kindaFat"" type="text" id="global-input" placeholder="Name">
+                        <input  class="input input-kindaFat""  type="email" id="global-input" placeholder="email">
+                        </form>
+                        </div>
+                   </div>   
+              </div>
+              <span id="dudu"></span>
+              </div>
+          
+            </div>
       </section>
+      
       <aside>
           <button class="paidAmount button"> Paid Amount</button>
           <div class="numbers">
@@ -72,8 +102,13 @@
         </div>
         <button class="button button-small">Submit</button>
       </aside>
-
+ 
+ 
+ 
     </main>
+ 
+    <script src="../B/jQuery/jquery.min.js"></script> 
+    <script src="../B/js/bootstrap.min.js"></script>
 </body>
 
 </html>
