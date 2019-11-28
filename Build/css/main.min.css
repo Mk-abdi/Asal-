@@ -1336,6 +1336,65 @@ body {
   background: #f6f8f7;
 }
 
+@media screen and (max-width: 1050px) {
+  #main-home {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #main-home .sec0 .data-table {
+    max-width: 850px;
+    margin: auto;
+  }
+  #main-home .sec1 {
+    max-width: 1000px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 850px) {
+  #main-home .sec1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #main-home .sec1 #notifications h2 {
+    font-size: 20px;
+  }
+  #main-home .sec1 #notifications div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: .8em;
+  }
+  #main-home .sec1 #notifications div span {
+    -ms-grid-columns: 1fr 25%;
+        grid-template-columns: 1fr 25%;
+  }
+  #main-home .sec1 #notifications div span p {
+    font-size: 14.5px;
+  }
+  #main-home .sec1 #notifications div span small {
+    font-size: 14px;
+  }
+  #main-home .sec1 #messages h2 {
+    font-size: 20px;
+  }
+  #main-home .sec1 #messages .message {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 25%;
+        grid-template-columns: 1fr 25%;
+    grid-gap: 0.8;
+  }
+}
+
 #main-order {
   display: -ms-grid;
   display: grid;
@@ -1419,6 +1478,31 @@ body {
   color: #555;
 }
 
+@media screen and (max-width: 1100px) {
+  #main-order {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #main-order .opts {
+    -ms-grid-columns: (minmax(120px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+
+@media screen and (max-width: 1100px) and (max-width: 740px) {
+  #main-order .opts button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #main-order aside {
+    margin: 0 auto;
+  }
+}
+
 #main-view-products {
   max-width: 820px;
 }
@@ -1460,88 +1544,4 @@ body {
 
 #main-view-orders .data-table table tbody tr:nth-child(odd) {
   background: #f6f8f7;
-}
-
-@media screen and (max-width: 1050px) {
-  #main-home {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  #main-home .sec0 .data-table {
-    max-width: 850px;
-    margin: auto;
-  }
-  #main-home .sec1 {
-    max-width: 1000px;
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 1050px) and (min-width: 850px) {
-  #main-home .sec1 {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  #main-home .sec1 #notifications h2 {
-    font-size: 20px;
-  }
-  #main-home .sec1 #notifications div {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-gap: .8em;
-  }
-  #main-home .sec1 #notifications div span {
-    -ms-grid-columns: 1fr 25%;
-        grid-template-columns: 1fr 25%;
-  }
-  #main-home .sec1 #notifications div span p {
-    font-size: 14.5px;
-  }
-  #main-home .sec1 #notifications div span small {
-    font-size: 14px;
-  }
-  #main-home .sec1 #messages h2 {
-    font-size: 20px;
-  }
-  #main-home .sec1 #messages .message {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 25%;
-        grid-template-columns: 1fr 25%;
-    grid-gap: 0.8;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  #main-order {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  #main-order .opts {
-    -ms-grid-columns: (minmax(120px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-}
-
-@media screen and (max-width: 1100px) and (max-width: 740px) {
-  #main-order .opts button {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  #main-order aside {
-    margin: 0 auto;
-  }
 }
