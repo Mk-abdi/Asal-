@@ -1687,3 +1687,61 @@ body {
   background: #c8dfe0;
   color: #222;
 }
+
+#main-notifications #notifications-all {
+  max-width: 40rem;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  padding: 1em 0;
+  border-radius: 5px;
+}
+
+#main-notifications #notifications-all h2 {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#main-notifications #notifications-all div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 1.5em;
+}
+
+#main-notifications #notifications-all div span {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20%;
+      grid-template-columns: 1fr 20%;
+  padding: 0.5em 1em;
+  border-left: 5px solid #333;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#main-notifications #notifications-all div span p {
+  font-size: 15.5px;
+  margin: 0;
+}
+
+#main-notifications #notifications-all div span small {
+  font-size: 15px;
+  color: #555;
+}
+
+#main-notifications #notifications-all div span:hover, #main-notifications #notifications-all div span:focus {
+  border-left: 5px solid #c8dfe0;
+  background: #f6f8f7;
+}
+
+#main-notifications #notifications-all div span:first-child {
+  border-left: 5px solid #d11137;
+}
+
+#main-notifications #notifications-all div span:first-child:hover, #main-notifications #notifications-all div span:first-child:focus {
+  border-left: 5px solid #c8dfe0;
+}
