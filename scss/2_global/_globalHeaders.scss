@@ -43,9 +43,9 @@
            margin: 0 2rem;
            a{ font-size: 17px;
             padding-bottom: 10px;
-            transition: all .2s linear;
+            transition: .2s;
             &:hover, &:focus{
-            border-bottom: 2px solid general(greyLight);
+            border-bottom: 1px solid general(greyLight);
             }
             &:visited {
             background: red;
