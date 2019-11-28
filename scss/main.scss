@@ -485,20 +485,23 @@ body {
 #main-notifications {
      @include notifications;
     #notifications-all {
-        box-shadow: none; // no box-shadows for the all-notifications wrapper page
-        border: 1px solid general(greyLight);
-        max-width: 40rem;
-        padding-top: 0;
+            box-shadow: none; // no box-shadows for the all-notifications wrapper page
+            border: 1px solid general(greyLight);
+            max-width: 40rem;
+            padding-top: 0;
 
-        h2 {
-        font-size: 22px;
-        color: #333;
-        margin-bottom: .5rem;
-        background: #fff; 
-        padding: 1em 0;
-        @include stickyTop0;
-        border-bottom: 1px solid #f2f2f2;
-        }
+            h2 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: .5rem;
+            background: #fff; 
+            padding: 1em 0;
+            @include stickyTop0; 
+            border-bottom: 1px solid #f2f2f2;
+            @media screen and (max-width: 800px) { // not sticky in mid-to-small screens
+                position: static;
+            }
+            }
         div {
             grid-gap: 1.2rem;
         }
@@ -509,15 +512,16 @@ body {
 
         @media screen and(max-width: 430px){
             div {
-                span {
-                    grid-template-columns: 1fr 25%;
-                    grid-gap: 2px;
-                   padding-left: 1em;
-                    small {
-                        font-size: 13.5px;
-                    }
-                }
+            span {
+            grid-template-columns: 1fr 25%;
+            grid-gap: 2px;
+            padding-left: 1em;
+            small {
+            font-size: 13.5px;
+            }
+            }
             }
         }
+ 
     }
     } 

@@ -1767,6 +1767,12 @@ body {
   border-bottom: 1px solid #f2f2f2;
 }
 
+@media screen and (max-width: 800px) {
+  #main-notifications #notifications-all h2 {
+    position: static;
+  }
+}
+
 #main-notifications #notifications-all div {
   grid-gap: 1.2rem;
 }
