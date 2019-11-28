@@ -1181,7 +1181,7 @@ body {
   grid-gap: 2em;
 }
 
-#main-home .sec1 #notifications {
+#main-home .sec1 #notifications, #main-home .sec1 #notifications-all {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
   padding: 1em 0;
@@ -1191,13 +1191,13 @@ body {
   border-radius: 5px;
 }
 
-#main-home .sec1 #notifications h2 {
+#main-home .sec1 #notifications h2, #main-home .sec1 #notifications-all h2 {
   font-size: 25px;
   font-weight: 500;
   text-align: center;
 }
 
-#main-home .sec1 #notifications div {
+#main-home .sec1 #notifications div, #main-home .sec1 #notifications-all div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -1205,7 +1205,7 @@ body {
   grid-gap: .8em;
 }
 
-#main-home .sec1 #notifications div span {
+#main-home .sec1 #notifications div span, #main-home .sec1 #notifications-all div span {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20%;
@@ -1217,26 +1217,26 @@ body {
   transition: all .2s ease-in-out;
 }
 
-#main-home .sec1 #notifications div span p {
+#main-home .sec1 #notifications div span p, #main-home .sec1 #notifications-all div span p {
   font-size: 15.5px;
   margin: 0;
 }
 
-#main-home .sec1 #notifications div span small {
+#main-home .sec1 #notifications div span small, #main-home .sec1 #notifications-all div span small {
   font-size: 15px;
   color: #555;
 }
 
-#main-home .sec1 #notifications div span:hover, #main-home .sec1 #notifications div span:focus {
-  border-left: 5px solid #c8dfe0;
+#main-home .sec1 #notifications div span:hover, #main-home .sec1 #notifications div span:focus, #main-home .sec1 #notifications-all div span:hover, #main-home .sec1 #notifications-all div span:focus {
+  border-left: 5px solid #c8dfe0 !important;
   background: #f6f8f7;
 }
 
-#main-home .sec1 #notifications div span:first-child {
+#main-home .sec1 #notifications div span:first-child, #main-home .sec1 #notifications-all div span:first-child {
   border-left: 5px solid #d11137;
 }
 
-#main-home .sec1 #notifications div span:first-child:hover, #main-home .sec1 #notifications div span:first-child:focus {
+#main-home .sec1 #notifications div span:first-child:hover, #main-home .sec1 #notifications div span:first-child:focus, #main-home .sec1 #notifications-all div span:first-child:hover, #main-home .sec1 #notifications-all div span:first-child:focus {
   border-left: 5px solid #c8dfe0;
 }
 
@@ -1688,30 +1688,31 @@ body {
   color: #222;
 }
 
-#main-notifications #notifications-all {
-  max-width: 40rem;
-  margin: auto;
-  background: #fff;
-  border: 1px solid #e3e3e3;
+#main-notifications #notifications, #main-notifications #notifications-all {
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
   padding: 1em 0;
+  background: #fff;
+  max-width: 33rem;
+  margin: auto;
   border-radius: 5px;
 }
 
-#main-notifications #notifications-all h2 {
+#main-notifications #notifications h2, #main-notifications #notifications-all h2 {
   font-size: 25px;
   font-weight: 500;
   text-align: center;
 }
 
-#main-notifications #notifications-all div {
+#main-notifications #notifications div, #main-notifications #notifications-all div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 1.5em;
+  grid-gap: .8em;
 }
 
-#main-notifications #notifications-all div span {
+#main-notifications #notifications div span, #main-notifications #notifications-all div span {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20%;
@@ -1723,25 +1724,66 @@ body {
   transition: all .2s ease-in-out;
 }
 
-#main-notifications #notifications-all div span p {
+#main-notifications #notifications div span p, #main-notifications #notifications-all div span p {
   font-size: 15.5px;
   margin: 0;
 }
 
-#main-notifications #notifications-all div span small {
+#main-notifications #notifications div span small, #main-notifications #notifications-all div span small {
   font-size: 15px;
   color: #555;
 }
 
-#main-notifications #notifications-all div span:hover, #main-notifications #notifications-all div span:focus {
-  border-left: 5px solid #c8dfe0;
+#main-notifications #notifications div span:hover, #main-notifications #notifications div span:focus, #main-notifications #notifications-all div span:hover, #main-notifications #notifications-all div span:focus {
+  border-left: 5px solid #c8dfe0 !important;
   background: #f6f8f7;
 }
 
-#main-notifications #notifications-all div span:first-child {
+#main-notifications #notifications div span:first-child, #main-notifications #notifications-all div span:first-child {
   border-left: 5px solid #d11137;
 }
 
-#main-notifications #notifications-all div span:first-child:hover, #main-notifications #notifications-all div span:first-child:focus {
+#main-notifications #notifications div span:first-child:hover, #main-notifications #notifications div span:first-child:focus, #main-notifications #notifications-all div span:first-child:hover, #main-notifications #notifications-all div span:first-child:focus {
   border-left: 5px solid #c8dfe0;
+}
+
+#main-notifications #notifications-all {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #e3e3e3;
+  max-width: 40rem;
+  padding-top: 0;
+}
+
+#main-notifications #notifications-all h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: .5rem;
+  background: #fff;
+  padding: 1em 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+#main-notifications #notifications-all div {
+  grid-gap: 1.2rem;
+}
+
+#main-notifications #notifications-all div span {
+  border-left: 5px solid #919191 !important;
+  padding-left: 1.2rem;
+}
+
+@media screen and (max-width: 430px) {
+  #main-notifications #notifications-all div span {
+    -ms-grid-columns: 1fr 25%;
+        grid-template-columns: 1fr 25%;
+    grid-gap: 2px;
+    padding-left: 1em;
+  }
+  #main-notifications #notifications-all div span small {
+    font-size: 13.5px;
+  }
 }
