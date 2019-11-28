@@ -174,7 +174,7 @@ img {
 #globalNav .logo h1 {
   margin-left: 0.5em;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: 0.5px;
   color: #469da3;
@@ -524,6 +524,7 @@ main .data-table table thead, main .data-table table th, main .data-table table 
 
 main .data-table table .det {
   color: #469da3;
+  cursor: pointer;
 }
 
 main .data-table table thead th {
@@ -1271,7 +1272,6 @@ body {
           box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
   padding: 1em;
   background: #fff;
-  max-width: 33rem;
   margin: auto;
   border-radius: 5px;
 }
@@ -1300,7 +1300,7 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 17%;
       grid-template-columns: 1fr 17%;
-  grid-gap: 0.8;
+  grid-gap: 0.8px;
 }
 
 #main-home .sec1 #messages .message span {
@@ -1782,6 +1782,10 @@ body {
   padding-left: 1.2rem;
 }
 
+#main-notifications #notifications-all div span .time {
+  color: #919191;
+}
+
 @media screen and (max-width: 430px) {
   #main-notifications #notifications-all div span {
     -ms-grid-columns: 1fr 25%;
@@ -1791,5 +1795,113 @@ body {
   }
   #main-notifications #notifications-all div span small {
     font-size: 13.5px;
+  }
+}
+
+#main-messages #messages {
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  background: #fff;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#main-messages #messages h2 {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#main-messages #messages #btn {
+  display: block;
+  width: 200px;
+  margin: auto;
+}
+
+#main-messages #messages button {
+  margin: 1em 0;
+  max-width: 100%;
+  background: #ec9f0f;
+  color: #fff;
+}
+
+#main-messages #messages .message {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 17%;
+      grid-template-columns: 1fr 17%;
+  grid-gap: 0.8px;
+}
+
+#main-messages #messages .message span {
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#main-messages #messages .message span small {
+  color: #555;
+  padding: 5px 0;
+}
+
+#main-messages #messages .message span:hover, #main-messages #messages .message span:focus {
+  background: #f6f8f7;
+}
+
+#main-messages #messages {
+  max-width: 50rem;
+  padding: 0.5rem 2em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #e3e3e3;
+}
+
+#main-messages #messages h2 {
+  z-index: 95;
+  padding: 0.8rem 0;
+  background: #fff;
+  color: #333;
+  font-size: 22px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+@media screen and (min-width: 800px) {
+  #main-messages #messages h2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
+
+#main-messages #messages .message .time {
+  color: #469da3;
+}
+
+#main-messages #messages .message:nth-child(odd) {
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 500px) {
+  #main-messages #messages .message {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 22%;
+        grid-template-columns: 1fr 22%;
+    grid-gap: 0.8;
+  }
+}
+
+@media screen and (max-width: 500px) and (max-width: 360px) {
+  #main-messages #messages .message .time {
+    font-size: 10px;
   }
 }
