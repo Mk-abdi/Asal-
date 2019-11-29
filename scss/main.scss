@@ -535,6 +535,12 @@ body {
 
 }
 
+
+
+//------------------------------------------------------------------------
+//   T  H  E  M  O  D  A  L
+//------------------------------------------------------------------------
+
 .modal-backdrop.show {
     background: none;
 }
@@ -548,30 +554,30 @@ body {
          max-width: 500px; 
          border: none;
          outline: none; 
-        margin-top: 5rem;
-        position: relative;
-        @include coolBoxShadow;
-        @media screen and (min-width: 800px){
+         margin-top: 5rem;
+         position: relative;
+         @include coolBoxShadow;
+         @media screen and (min-width: 800px){
             margin-left: -3rem;
-        }
+         }
          .modal-body {
              background: #fff;
-            border-radius: 10px;  
-             form {
-                 display: grid;
-                 grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-                 grid-gap: 0.3rem;
-                 justify-content: center;
-             }
+             border-radius: 10px;  
+            form {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                grid-gap: 0.3rem;
+                justify-content: center;
+            }
 
              
          }
 
-         .modal-footer {
-            button {
-                max-width: 100px;
-                padding: 0;
-                height: 20px;
+     .modal-footer {
+        button {
+            max-width: 100px;
+            padding: 0;
+            height: 20px;
             }
          }
      }
