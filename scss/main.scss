@@ -600,3 +600,79 @@ body {
           @include coolBoxShadow;
      }
  }
+
+
+
+ //------------------------------------------------------------------------
+//  D  A  I  L  Y   I  N  C  O  M  E
+//------------------------------------------------------------------------
+
+#main-dailyIncome {
+    section {
+        max-width: 100%;
+        background: #fff;
+        padding: 0;
+        padding-top: 1em;
+        border-radius: 10px;
+        .wrapper {
+        @include grid2Col;
+        grid-gap: 1em;
+        @media screen and (max-width: 925px) {
+            @include gridOneCol;
+        }
+    
+        .data-table {
+            box-shadow: none; 
+            border-radius: none; 
+            border: none;
+            @media screen and (min-width: 925px) {
+                padding-right: 2em;
+                border-right: 1px solid general(greyLight);
+            }
+            span {
+              display: flex;
+              justify-content: flex-end;
+              padding-right: 1em;
+            }
+        }
+
+        form {
+            button {
+                background: general(success);
+                color: #333;
+            }
+
+            span {
+                @include flex-center;
+                padding: 1em 0;
+                a {
+                    color: general(secondary);
+                    font-size: 18px;
+                    font-weight: bold; 
+                    padding-left: 1em;
+                    @media screen and (max-width: 500px) {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+ 
+    }
+     .footer {
+            width: 100%;
+            margin-top: 1.5rem;
+            padding: 1em 0;
+            @include flex-center;
+            background: general(greyLight);
+            .pdf-download-link {
+                color: general(secondary);
+                a {
+                    color: general(secondary);
+                }
+            }
+            span {
+                margin-right: 1em;
+            }
+        }
+}
+}
