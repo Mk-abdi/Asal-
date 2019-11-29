@@ -431,8 +431,7 @@ footer div ul li a:hover {
 }
 
 #global-form #global-input:hover {
-  -webkit-box-shadow: 0 2px 10px rgba(82, 87, 86, 0.2), 0 -1px 2px rgba(82, 87, 86, 0.2);
-          box-shadow: 0 2px 10px rgba(82, 87, 86, 0.2), 0 -1px 2px rgba(82, 87, 86, 0.2);
+  background: #f6f8f7;
 }
 
 #global-form textarea {
@@ -442,8 +441,7 @@ footer div ul li a:hover {
 }
 
 #global-form textarea:hover {
-  -webkit-box-shadow: 0 2px 10px rgba(82, 87, 86, 0.2), 0 -1px 2px rgba(82, 87, 86, 0.2);
-          box-shadow: 0 2px 10px rgba(82, 87, 86, 0.2), 0 -1px 2px rgba(82, 87, 86, 0.2);
+  background: #f6f8f7;
 }
 
 #global-form .form-btn {
@@ -1906,36 +1904,35 @@ body {
   }
 }
 
-#banner .container, #bcard .container {
-  max-width: 500px;
-  padding: 1em;
-  background: #fff;
-  -webkit-box-shadow: 0 2px 10px rgba(82, 87, 86, 0.2), 0 -1px 2px rgba(82, 87, 86, 0.2);
-          box-shadow: 0 2px 10px rgba(82, 87, 86, 0.2), 0 -1px 2px rgba(82, 87, 86, 0.2);
-  border-radius: 10px;
-}
-
-#banner form, #bcard form {
-  background: #fff;
-}
-
 .modal-backdrop.show {
   background: none;
 }
 
-#banner .container {
-  position: absolute;
+.modal .modal-content {
+  max-width: 500px;
+  max-height: 250px;
+  border: none;
+  outline: none;
+  margin-top: 3rem;
 }
 
-#bcard .container {
-  position: absolute;
+.modal .modal-content .modal-body {
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 10px rgba(82, 87, 86, 0.2), 0 -1px 2px rgba(82, 87, 86, 0.2);
+          box-shadow: 0 2px 10px rgba(82, 87, 86, 0.2), 0 -1px 2px rgba(82, 87, 86, 0.2);
 }
 
-#bcard .container::after {
-  position: absolute;
-  width: 20px;
+.modal .modal-content .modal-body form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 0.5em;
+}
+
+.modal .modal-content .modal-footer button {
+  max-width: 100px;
+  padding: 0;
   height: 20px;
-  background: red;
-  display: block;
-  left: 40%;
 }

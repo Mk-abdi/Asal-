@@ -12,7 +12,7 @@
        margin: 1em 0;
        padding: 10px;
        &:hover {
-          @include coolBoxShadow;
+          background: general(light0);
        }
     }
      textarea {
@@ -20,7 +20,7 @@
        border: 1px solid general(grey1);
        border-radius: 3px;
        &:hover {
-          @include coolBoxShadow;
+         background: general(light0)
        }
     }
  

@@ -535,40 +535,38 @@ body {
 
 }
 
- #banner, #bcard { 
+.modal-backdrop.show {
+    background: none;
+}
+ 
 
-    .container {
-        max-width: 500px;
-        padding: 1em;
-        background: #fff;
-        @include coolBoxShadow;
-        border-radius: 10px; 
-    }
-     form {
-         background: #fff;
-     }
- }
+ .modal { 
+     .modal-content {
+         max-width: 500px;
+         max-height: 250px;
+         border: none;
+         outline: none;
+         margin-top: 3rem; 
 
- .modal-backdrop.show {
-     background: none;
- }
+         .modal-body {
+             background: #fff;
+            border-radius: 10px; 
+         @include coolBoxShadow;
+             form {
+                 display: grid;
+                 grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                 grid-gap: 0.5em;
+             }
 
- #banner { 
-     .container {
-         position: absolute;
-     }
- }
+             
+         }
 
- #bcard { 
-     .container { 
-         position: absolute;
-     }
-     .container::after {
-         position: absolute;
-         width: 20px;
-         height: 20px;
-         background: red;
-         display: block;
-         left: 40%;
+         .modal-footer {
+            button {
+                max-width: 100px;
+                padding: 0;
+                height: 20px;
+            }
+         }
      }
  }
