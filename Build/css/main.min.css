@@ -2073,3 +2073,115 @@ body {
 #main-dailyIncome section .footer span {
   margin-right: 1em;
 }
+
+#main-chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main-chat .chat-area {
+  background: #fff;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#main-chat .chat-area .messages-area {
+  margin-top: 1.5em;
+}
+
+#main-chat .chat-area .messages-area .header-username {
+  padding: 1em 0;
+  text-align: center;
+  font-size: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+
+#main-chat .chat-area .messages-area #divider span hr {
+  color: #c8dfe0;
+}
+
+#main-chat .chat-area .messages-area #divider span p {
+  background: #c8dfe0;
+  border-radius: 20px;
+  margin-top: -1em;
+  width: 150px;
+  padding: 3px;
+  font-size: 15px;
+}
+
+#main-chat .chat-area .messages-area .messages {
+  width: 700px;
+  margin: 1em 0;
+  padding: 0 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#main-chat .chat-area .messages-area .messages .messageBox {
+  max-width: 250px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+#main-chat .chat-area .messages-area .messages .messageBox p {
+  padding: 1em;
+  background: #f2f2f2;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+#main-chat .chat-area .messages-area .messages .messageBox .time {
+  font-size: 15px;
+  padding: 5px 0;
+  color: #919191;
+  margin-left: 70%;
+}
+
+#main-chat .chat-area .messages-area .messages .messageBox:nth-child(odd) {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+#main-chat .chat-area .messages-area .messages .messageBox:nth-child(odd) p {
+  background: #c8dfe0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0;
+}
+
+#main-chat .chat-area .send-area {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 1fr 20%;
+      grid-template-columns: 10% 1fr 20%;
+  grid-gap: 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding: 1em 0;
+  background: #fff;
+  margin-top: 1.5em;
+}
+
+#main-chat .chat-area .send-area i {
+  font-size: 40px;
+  text-align: center;
+  -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
+  color: #919191;
+}
+
+#main-chat .chat-area .send-area button {
+  background: #c8dfe0;
+  color: #333;
+}
