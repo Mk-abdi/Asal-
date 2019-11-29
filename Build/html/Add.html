@@ -46,22 +46,35 @@
       <section>
           <strong>Order</strong>
           <div class="opts">
-              <button class="button" data-toggle="modal" data-target="#banner" >Banner</button>
-         
-             
-              
-              <!-- Modal -->
-              <div class="modal fade" id="banner" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <button class="button" data-toggle="modal" data-target="#dataInsertModal" >Banner</button>
+              <button class="button" data-toggle="modal" data-target="#dataInsertModal">Sticker</button>
+              <button class="button" data-toggle="modal" data-target="#dataInsertModal">Banner</button>
+              <button class="button" data-toggle="modal" data-target="#dataInsertModal">T-shirt Vip</button>
+              <button class="button" data-toggle="modal" data-target="#dataInsertModal">Business card</button>
+              <button class="button" data-toggle="modal" data-target="#dataInsertModal">Sticker</button>
+              <button class="button" data-toggle="modal" data-target="#dataInsertModal">Banner</button>
+              <button class="button" data-toggle="modal" data-target="#dataInsertModal">Banner</button>  
+              <button class="button" data-toggle="modal" data-target="#dataInsertModal">Sticker</button>
+              <button class="button" autofocus data-toggle="modal" data-target="#dataInsertModal">Banner</button>
+              <button class="button" data-toggle="modal" data-target="#dataInsertModal">T-shirt Vip</button>
+              <button class="button" data-toggle="modal" data-target="#dataInsertModal">Business card</button>   
+            </div>
+
+             <!-- -------------------------------
+                  * Modal (currently bootstrap)
+                  * This modal will be triggered by the above buttons
+              ----------------------------------->
+              <div class="modal fade" id="dataInsertModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                    
                     <div class="modal-body">
-                     <form id="global-form">
-                        <input class="input input-kindaFat" type="text" id="global-input"  placeholder="width" >
-                        <input  class="input input-kindaFat"  type="email" id="global-input" placeholder="height" > 
-                        <input  class="input input-kindaFat"  type="email" id="global-input" placeholder="Quantity" >
-                        <input  class="input input-kindaFat"  type="email" id="global-input" placeholder="Price" >
-                        </form>
+                      <form id="global-form">
+                        <input class="input input-kindaFat" type="number" id="global-input"  placeholder="width" >
+                        <input  class="input input-kindaFat"  type="number" id="global-input" placeholder="height" > 
+                        <input  class="input input-kindaFat"  type="number" id="global-input" placeholder="Quantity" >
+                        <input  class="input input-kindaFat"  type="number" id="global-input" placeholder="Price" >
+                      </form>
                     </div>
                      
                   </div>
@@ -69,20 +82,6 @@
               </div>
              
              
-              <button class="button">Sticker</button>
-              <button class="button">Banner</button>
-              <button class="button">T-shirt Vip</button>
-              <button class="button">Business card</button>
-              <button class="button">Sticker</button>
-              <button class="button" autofocus>Banner</button>
-              <button class="button" data-toggle="modal" data-target="#myModal">Banner</button>  
-              <button class="button" autofocus>Sticker</button>
-              <button class="button" autofocus>Banner</button>
-              <button class="button">T-shirt Vip</button>
-              <button class="button" data-toggle="modal" data-target="#banner">Business card</button>
-               
-          
-            </div>
       </section>
       
       <aside>

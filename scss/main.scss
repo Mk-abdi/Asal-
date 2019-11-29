@@ -539,23 +539,29 @@ body {
     background: none;
 }
  
+#dataInsertModal {
+    top: 10%;
+}
 
  .modal { 
      .modal-content {
-         max-width: 500px;
-         max-height: 250px;
+         max-width: 500px; 
          border: none;
-         outline: none;
-         margin-top: 3rem; 
-
+         outline: none; 
+        margin-top: 5rem;
+        position: relative;
+        @include coolBoxShadow;
+        @media screen and (min-width: 800px){
+            margin-left: -3rem;
+        }
          .modal-body {
              background: #fff;
-            border-radius: 10px; 
-         @include coolBoxShadow;
+            border-radius: 10px;  
              form {
                  display: grid;
-                 grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-                 grid-gap: 0.5em;
+                 grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                 grid-gap: 0.3rem;
+                 justify-content: center;
              }
 
              
@@ -568,5 +574,19 @@ body {
                 height: 20px;
             }
          }
+     }
+
+     .modal-content::before {
+         content: '';
+         width: 40px;
+         height: 40px;
+         background: red;
+         border-top-left-radius: 100%;
+         border-bottom-left-radius: 100%;
+         position: absolute;
+         left: -40px;
+         top: 40%;
+         background: #fff;
+          @include coolBoxShadow;
      }
  }
