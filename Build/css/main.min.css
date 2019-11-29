@@ -1782,6 +1782,7 @@ body {
 
 #main-notifications #notifications-all div span .time {
   color: #919191;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 430px) {
@@ -1861,6 +1862,12 @@ body {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 1px solid #e3e3e3;
+}
+
+@media screen and (max-width: 370px) {
+  #main-messages #messages {
+    padding: 0 2em;
+  }
 }
 
 #main-messages #messages h2 {
