@@ -687,23 +687,28 @@ body {
  #main-chat {
      display: flex;
      justify-content: center;
+     position: relative;
      .chat-area {
          background: #fff;
          max-width: 100%;
          margin: 0 auto; 
-         border: 1px solid general(white2);
+        //  border: 1px solid general(white2);
+         box-shadow: 0 0 2px rgba(0,0,0,0.1);
+         @include gridOneCol;
          .messages-area {
              margin-top: 1.5em;
             .header-username {
-                padding: 1em 0;
+                padding: 0.5rem 0;
+                margin: 0 0 1em 0;
                 text-align: center;
                 font-size: 20px;
-                // border-bottom: 1px solid #f2f2f2;
+                // border-bottom: 1px solid #f2f2f2; 
                 @include stickyTop0;
                 background: #fff;
                 z-index: 95;
             }
             #divider {
+                margin: 0 0 2em 0;
                 span { 
                     hr {
                         color: general(success);
@@ -718,16 +723,8 @@ body {
                     }
                 }
             }
-
-            .divider-today {
-                width: 100%;
-                span {
-                    p {
-                        margin: 0;
-                    }
-                }
-            }
-
+ 
+             
             .messages {
                 width: 700px;
                 margin: 1em 0;

@@ -44,15 +44,53 @@
 
 
    <main id="main-chat" class="container">
-       <section class="chat-area">
+       <div id="backBtn">
+            <a href="Messages.html" class="button"> <i class="fa fa-caret-left"></i> Back</a>
+          </div>
+       <section class="chat-area"> 
           <div class="messages-area">
              <div class="header-username">
-                 <strong class="username"> Random name</strong>
+                 <strong class="username"> Someone's name</strong>
              </div>
-
+ 
+             <div class="divider" id="divider"><hr> <span><p>November 29 </p></span></div>
+             <div class="messages yesterday">
+                 <span class="messageBox">
+                     <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                     <small class="time">10:11</small>
+                 </span>
+                  <span class="messageBox">
+                     <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                     <small class="time">10:11</small>
+                 </span> 
+                  <span class="messageBox">
+                     <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                     <small class="time">10:11</small>
+                 </span>
+                  <span class="messageBox">
+                     <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                     <small class="time">10:11</small>
+                 </span> 
+                  <span class="messageBox">
+                     <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                     <small class="time">10:11</small>
+                 </span>
+                  <span class="messageBox">
+                     <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                     <small class="time">10:11</small>
+                 </span> 
+                  <span class="messageBox">
+                     <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                     <small class="time">10:11</small>
+                 </span>
+                  <span class="messageBox">
+                     <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                     <small class="time">10:11</small>
+                 </span> 
+             </div> <!-- end messages box-->
+             
              <div class="divider" id="divider"><hr> <span><p>Yesterday </p></span></div>
-
-             <div class="messages">
+             <div class="messages today">
                  <span class="messageBox">
                      <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                      <small class="time">10:11</small>
@@ -69,25 +107,9 @@
                      <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                      <small class="time">10:11</small>
                  </span> 
-                  <span class="messageBox">
-                     <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                     <small class="time">10:11</small>
-                 </span>
-                  <span class="messageBox">
-                     <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                     <small class="time">10:11</small>
-                 </span> 
-                  <span class="messageBox">
-                     <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                     <small class="time">10:11</small>
-                 </span>
-                  <span class="messageBox">
-                     <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                     <small class="time">10:11</small>
-                 </span> 
-
-                 <div class="divider-today" id="divider"><hr> <span><p>Today </p></span></div>
-                 
+            </div>  <!-- end messages box-->
+              <div class="divider" id="divider"><hr> <span><p>Today </p></span></div>
+             <div class="messages today">
                  <span class="messageBox">
                      <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                      <small class="time">10:11</small>
@@ -104,8 +126,8 @@
                      <p> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                      <small class="time">10:11</small>
                  </span> 
-             </div>
-          </div>
+            </div>  <!-- end messages box-->
+          </div>  <!-- end messages Area-->
 
         <div class="send-area">
             <label for="fileGrabber"> </label>
@@ -113,7 +135,7 @@
             <input type="text" class="input input-global">
             <button class="button button-small">Send</button>
         </div>
-       </section>
+       </section> <!-- end chat Area-->
    </main>
 
 </body>
