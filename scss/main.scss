@@ -805,7 +805,7 @@ body {
      } 
      @media screen and (min-width: 910px) {
 
-         #globalNav {
+         nav.chat {
              @include stickyTop0;
              z-index: 99;
              background: general(light0);
