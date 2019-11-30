@@ -345,3 +345,27 @@ main {
     }
  }
  
+
+ footer {
+     width: 100%;
+     padding: 1em 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     background: general(white2);
+     p {
+         letter-spacing: 0.7px;
+         color: #333;
+         padding: 4px;
+         @media screen and (max-width: 520px) {
+             font-size: 13px;
+         }
+     }
+
+     small {
+         color: #555;  
+         padding: 4px;
+         margin-left: 2em;
+     }
+ }
