@@ -2287,6 +2287,42 @@ body {
   color: #333;
 }
 
+/*-------------------------------------------------------
+                * global style for message boxes:
+                * This styles are applied depending on the given id of the element
+        -------------------------------------------------------*/
+#message-box-user0, #message-box-user1 {
+  max-width: 250px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+#message-box-user0 p, #message-box-user1 p {
+  padding: 1em;
+  background: #f2f2f2;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+#message-box-user0 .time, #message-box-user1 .time {
+  font-size: 15px;
+  padding: 5px 0;
+  color: #919191;
+  margin-left: 70%;
+}
+
+#message-box-user1 {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+#message-box-user1 p {
+  background: #c8dfe0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0;
+}
+
 @media screen and (min-width: 910px) {
   nav.chat {
     position: -webkit-sticky;

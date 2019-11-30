@@ -691,8 +691,7 @@ body {
      .chat-area {
          background: #fff;
          max-width: 100%;
-         margin: 0 auto; 
-        //  border: 1px solid general(white2);
+         margin: 0 auto;  
          box-shadow: 0 0 2px rgba(0,0,0,0.1);
          @include gridOneCol;
         
@@ -761,7 +760,9 @@ body {
             }
          }
 
-         .send-area {
+          
+          
+            .send-area {
              width: 100%;
              display: grid;
              grid-template-columns: 10% 1fr 20%;
@@ -803,6 +804,35 @@ body {
              }
          }
      } 
+       /*-------------------------------------------------------
+                * global style for message boxes:
+                * This styles are applied depending on the given id of the element
+        -------------------------------------------------------*/
+      #message-box-user0, #message-box-user1 {
+        max-width: 250px; 
+        justify-self: end; 
+        p {
+            padding: 1em;
+            background: #f2f2f2;
+            border-radius: 10px;
+            border-bottom-right-radius: 0;
+            margin: 0;
+        }
+        .time { 
+           font-size: 15px; 
+           padding: 5px 0; 
+           color: general(grey0);
+           margin-left: 70%;
+        }
+      }
+      #message-box-user1 {
+        justify-self: start;
+        p {
+            background: general(success);
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 0;
+        }
+      }
      @media screen and (min-width: 910px) {
 
          nav.chat {
