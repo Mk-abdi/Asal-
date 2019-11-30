@@ -2272,9 +2272,6 @@ body {
 }
 
 @media screen and (max-width: 625px) and (min-width: 525px) {
-  #main-chat .chat-area {
-    max-width: 100%;
-  }
   #main-chat .chat-area .messages {
     max-width: 500px;
   }

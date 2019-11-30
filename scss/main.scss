@@ -845,16 +845,13 @@ body {
 
 @media screen and (max-width: 625px) and (min-width: 525px) {
     #main-chat {
-        .chat-area {
-            max-width: 100%;
-
+        .chat-area { 
             .messages {
                 max-width: 500px; 
             }
         }
     }
 }
-
 
 @media screen and (max-width: 625px)  {
     #main-chat {
@@ -870,7 +867,9 @@ body {
                 padding: 0;
                 grid-row-gap: 1em;
                 .messageBox {
-                    p{ font-size: 15px;}
+                    p{
+                       font-size: 15px;
+                        }
                     .time {
                         font-size: 13px;
                     }
@@ -887,8 +886,8 @@ body {
             #divider {
                 span p {
                     font-size: 14px;
-                }
-            }
+                      }
+                  }
             .messages {
                 max-width: 400px;  
             }
