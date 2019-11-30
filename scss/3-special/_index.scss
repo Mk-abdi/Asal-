@@ -208,6 +208,10 @@ main {
                 @media screen and (max-width: 970px){
                     margin-top: 1em;
                 }
+                button {
+                    background: general(secondary);
+                    color: #fff;
+                }
             }
               
         }

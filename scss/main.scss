@@ -299,6 +299,56 @@ html, body {
 
 
 //------------------------------------------------------------------------
+//   T  H  E  M  O  D  A  L
+//------------------------------------------------------------------------
+
+.modal-backdrop.show {
+    background: none;
+}
+ 
+#dataInsertModal {
+    top: 10%;
+}
+
+ .modal { 
+     .modal-content {
+         max-width: 500px; 
+         border: none;
+         outline: none; 
+         margin-top: 5rem;
+         position: relative;
+         @include coolBoxShadow;
+         @media screen and (min-width: 800px){
+            margin-left: -3rem;
+         }
+         .modal-body {
+             background: #fff;
+             border-radius: 10px;  
+            form {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                grid-gap: 0.3rem;
+                justify-content: center;
+            }
+
+             
+         }
+
+     .modal-footer {
+        button {
+            max-width: 100px;
+            padding: 0;
+            height: 20px;
+            }
+         }
+     }
+
+      
+ }
+
+
+
+//------------------------------------------------------------------------
 //      V  I  E  W    P  R  O  D  U  C  T  S
 //------------------------------------------------------------------------
  
@@ -545,68 +595,7 @@ html, body {
 
 }
 
-
-
-//------------------------------------------------------------------------
-//   T  H  E  M  O  D  A  L
-//------------------------------------------------------------------------
-
-.modal-backdrop.show {
-    background: none;
-}
  
-#dataInsertModal {
-    top: 10%;
-}
-
- .modal { 
-     .modal-content {
-         max-width: 500px; 
-         border: none;
-         outline: none; 
-         margin-top: 5rem;
-         position: relative;
-         @include coolBoxShadow;
-         @media screen and (min-width: 800px){
-            margin-left: -3rem;
-         }
-         .modal-body {
-             background: #fff;
-             border-radius: 10px;  
-            form {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-                grid-gap: 0.3rem;
-                justify-content: center;
-            }
-
-             
-         }
-
-     .modal-footer {
-        button {
-            max-width: 100px;
-            padding: 0;
-            height: 20px;
-            }
-         }
-     }
-
-     .modal-content::before {
-         content: '';
-         width: 40px;
-         height: 40px;
-         background: red;
-         border-top-left-radius: 100%;
-         border-bottom-left-radius: 100%;
-         position: absolute;
-         left: -40px;
-         top: 40%;
-         background: #fff;
-          @include coolBoxShadow;
-     }
- }
-
 
 
  //------------------------------------------------------------------------
