@@ -695,20 +695,21 @@ body {
         //  border: 1px solid general(white2);
          box-shadow: 0 0 2px rgba(0,0,0,0.1);
          @include gridOneCol;
-         .messages-area {
-             margin-top: 1.5em;
+        
             .header-username {
                 padding: 0.5rem 0;
                 margin: 0 0 1em 0;
                 text-align: center;
                 font-size: 20px;
-                // border-bottom: 1px solid #f2f2f2; 
-                @include stickyTop0;
-                background: #fff;
+                background: general(light0); 
+                border-bottom: 1px solid general(white2);
+                @include stickyTop0; 
                 z-index: 95;
+                strong {color: #333;}
             }
             #divider {
                 margin: 0 0 2em 0;
+                width: 100%;
                 span { 
                     hr {
                         color: general(success);
@@ -716,7 +717,7 @@ body {
                     p {
                         background:  general(success);
                         border-radius: 20px;
-                        margin-top: -1em;
+                        margin-top: 0;
                         width: 150px;
                         padding: 3px;
                         font-size: 15px;
@@ -730,6 +731,7 @@ body {
                 margin: 1em 0;
                 padding: 0 1em;
                 @include gridOneCol;
+                color: #333;
                 .messageBox {
                     max-width: 250px; 
                     justify-self: end;
@@ -800,5 +802,117 @@ body {
                  color: #333;
              }
          }
+     } 
+     @media screen and (min-width: 910px) {
+
+         #globalNav {
+             @include stickyTop0;
+             z-index: 99;
+             background: general(light0);
+         }
+
+         #main-chat {
+             .chat-area {
+                 .header-username {
+                     position: relative;
+                 }
+             }
+         }
+         
      }
- }
+
+//  smallers screens
+
+@media screen and (max-width: 910px){
+    #main-chat {
+        #backBtn {
+            display: none;  // visibile on big screens
+        }
+    }
+}
+
+@media screen and (max-width: 725px) and (min-width: 625px) {
+    #main-chat {
+        .chat-area {
+            max-width: 100%;
+
+            .messages {
+                max-width: 600px; 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 625px) and (min-width: 525px) {
+    #main-chat {
+        .chat-area {
+            max-width: 100%;
+
+            .messages {
+                max-width: 500px; 
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 625px)  {
+    #main-chat {
+        margin: 0;
+        padding: 0;
+        .chat-area {
+            width: 100%;
+            margin: 0;
+
+            .messages {
+                max-width: 500px;  
+                margin: 0 auto;
+                padding: 0;
+                grid-row-gap: 1em;
+                .messageBox {
+                    p{ font-size: 15px;}
+                    .time {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 525px) and (min-width: 410px) {
+    #main-chat {
+        .chat-area {
+            width: 100%;
+            #divider {
+                span p {
+                    font-size: 14px;
+                }
+            }
+            .messages {
+                max-width: 400px;  
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 410px)   {
+    #main-chat { 
+        .chat-area { 
+            .messages {
+                max-width: 350px;  
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 350px)   {
+    #main-chat { 
+        .chat-area { 
+            .messages {
+                max-width: 300px;  
+            }
+        }
+    }
+}
