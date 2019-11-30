@@ -40,6 +40,7 @@
             justify-content: center;
             width: 6/100%;
         li { 
+            position: relative;
            margin: 0 2rem;
            a{ font-size: 17px;
             padding-bottom: 10px;
@@ -128,4 +129,28 @@
         } 
     }
 }
+}
+
+
+
+// dropdown lists
+
+#globalNav {
+    ul li ul {
+        margin: 0; 
+        display: none;
+        position: absolute;
+        left: -20px;
+        width: 180px; 
+        padding: 1em 0;
+        z-index: 101; 
+        transition: .2s;
+        border: 2px solid general(white2); 
+        background: general(light0);
+         
+    }
+
+    ul li:hover  ul  {
+        display: block;
+    }
 }

@@ -219,6 +219,7 @@ img {
 }
 
 #globalNav ul li {
+  position: relative;
   margin: 0 2rem;
 }
 
@@ -328,6 +329,24 @@ img {
     margin-top: 1em;
     justify-self: flex-end;
   }
+}
+
+#globalNav ul li ul {
+  margin: 0;
+  display: none;
+  position: absolute;
+  left: -20px;
+  width: 180px;
+  padding: 1em 0;
+  z-index: 101;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border: 2px solid #f2f2f2;
+  background: #f6f8f7;
+}
+
+#globalNav ul li:hover ul {
+  display: block;
 }
 
 footer {
