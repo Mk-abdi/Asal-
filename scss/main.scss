@@ -826,7 +826,7 @@ body {
 @media screen and (max-width: 910px){
     #main-chat {
         #backBtn {
-            display: none;  // visibile on big screens
+            display: none;  /* visibile only large screens */
         }
     }
 }
@@ -838,16 +838,6 @@ body {
 
             .messages {
                 max-width: 600px; 
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 625px) and (min-width: 525px) {
-    #main-chat {
-        .chat-area { 
-            .messages {
-                max-width: 500px; 
             }
         }
     }
@@ -889,7 +879,7 @@ body {
                       }
                   }
             .messages {
-                max-width: 400px;  
+                max-width: 400px;    // smart phones
             }
         }
     }
@@ -899,7 +889,7 @@ body {
     #main-chat { 
         .chat-area { 
             .messages {
-                max-width: 350px;  
+                max-width: 350px;  // small smart phones
             }
         }
     }
@@ -910,7 +900,7 @@ body {
     #main-chat { 
         .chat-area { 
             .messages {
-                max-width: 300px;  
+                max-width: 300px;   // super small smart phones
             }
         }
     }

@@ -2259,6 +2259,7 @@ body {
 @media screen and (max-width: 910px) {
   #main-chat #backBtn {
     display: none;
+    /* visibile only large screens */
   }
 }
 
@@ -2268,12 +2269,6 @@ body {
   }
   #main-chat .chat-area .messages {
     max-width: 600px;
-  }
-}
-
-@media screen and (max-width: 625px) and (min-width: 525px) {
-  #main-chat .chat-area .messages {
-    max-width: 500px;
   }
 }
 
