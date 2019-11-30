@@ -2192,6 +2192,27 @@ body {
   color: #919191;
 }
 
+#main-chat .chat-area .send-area input[type=file] {
+  display: none;
+}
+
+#main-chat .chat-area .send-area label {
+  position: relative;
+  cursor: pointer;
+}
+
+#main-chat .chat-area .send-area label::before {
+  content: '\f115';
+  font-family: fontAwesome;
+  position: absolute;
+  color: #919191;
+  font-size: 35px;
+  text-align: center;
+  text-justify: center;
+  width: 100%;
+  height: 100%;
+}
+
 #main-chat .chat-area .send-area button {
   background: #c8dfe0;
   color: #333;

@@ -779,7 +779,25 @@ body {
                  transform: rotate(80deg);
                  color: general(grey0);
              }
-
+             
+             input[type=file]{
+                 display: none;
+             }
+             label { 
+                 position: relative;
+                 cursor: pointer;
+             }
+             label::before {
+                content: '\f115';
+                font-family: fontAwesome; 
+                position: absolute;  
+                color:  general(grey0);
+                font-size: 35px;
+                text-align: center;
+                text-justify: center;
+                width: 100%;
+                height: 100%; ;
+             }
              button {
                  background: general(success);
                  color: #333;
