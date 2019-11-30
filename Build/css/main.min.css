@@ -228,10 +228,12 @@ img {
   padding-bottom: 10px;
   -webkit-transition: .2s;
   transition: .2s;
+  opacity: 0.7;
 }
 
 #globalNav ul li a:hover, #globalNav ul li a:focus {
   border-bottom: 1px solid #e3e3e3;
+  opacity: 1;
 }
 
 #globalNav ul li a:visited {
@@ -243,6 +245,41 @@ img {
   opacity: 0.7;
   padding-left: 1px;
   padding-top: 2px;
+}
+
+#globalNav ul li ul {
+  margin: 0;
+  display: none;
+  position: absolute;
+  left: -30px;
+  width: 200px;
+  padding: 1em 0;
+  z-index: 101;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border: 2px solid #f2f2f2;
+  background: #f6f8f7;
+}
+
+#globalNav ul li ul li {
+  margin-top: 5px;
+}
+
+#globalNav ul li ul li a {
+  opacity: 0.7;
+}
+
+#globalNav ul li ul li a:hover, #globalNav ul li ul li a:focus, #globalNav ul li ul li a:active {
+  opacity: 1;
+  border: none;
+}
+
+#globalNav ul li:hover ul {
+  display: block;
+}
+
+#globalNav ul li:focus ul {
+  display: block;
 }
 
 @media screen and (max-width: 800px) {
@@ -271,7 +308,7 @@ img {
   }
 }
 
-@media screen and (max-width: 800px) and (max-width: 490px) {
+@media screen and (max-width: 800px) and (max-width: 500px) {
   #globalNav .logo h1 {
     font-size: 13px;
   }
@@ -294,7 +331,7 @@ img {
     margin: 0.5em 0 0 0;
     padding-right: 0.4rem;
   }
-  #globalNav #nList input[type=checkbox]:checked ~ ul {
+  #globalNav #nList input[type=checkbox]:checked ~ #primaryList {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -311,7 +348,7 @@ img {
     padding: 0 10px 10px 10px;
     cursor: pointer;
   }
-  #globalNav #nList ul {
+  #globalNav #nList #primaryList {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -320,33 +357,21 @@ img {
     border: 1.5px solid #e3e3e3;
     border-top: none;
     margin: 0;
-    padding: 0 1em 1em 1em;
+    padding: 0 0 1em 0;
     background: #f6f8f7;
     z-index: 96;
+    width: 150px;
   }
-  #globalNav #nList ul li {
+  #globalNav #nList #primaryList li {
     margin: 0;
     margin-top: 1em;
     justify-self: flex-end;
+    padding-left: 1.5em;
   }
-}
-
-#globalNav ul li ul {
-  margin: 0;
-  display: none;
-  position: absolute;
-  left: -20px;
-  width: 180px;
-  padding: 1em 0;
-  z-index: 101;
-  -webkit-transition: .2s;
-  transition: .2s;
-  border: 2px solid #f2f2f2;
-  background: #f6f8f7;
-}
-
-#globalNav ul li:hover ul {
-  display: block;
+  #globalNav ul li ul {
+    width: 100%;
+    left: 0;
+  }
 }
 
 footer {
